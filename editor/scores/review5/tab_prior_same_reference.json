@@ -1,0 +1,103 @@
+{
+ "prereg": "runs/dev/preregs/sacc_review8_prereg.md Part SR",
+ "entries": 550,
+ "prior_by_gold": {
+  "letter": {
+   "male": 0.3857,
+   "female": 0.373
+  },
+  "same_reference": {
+   "male": 0.3851,
+   "female": 0.3754
+  }
+ },
+ "contrasts": {
+  "letter": {
+   "Detector": {
+    "L": {
+     "d": 0.1331,
+     "lo": 0.0897,
+     "hi": 0.1786,
+     "ci99": true
+    },
+    "DISC": {
+     "d": 0.075,
+     "lo": 0.0331,
+     "hi": 0.1222,
+     "ci99": true
+    },
+    "LEAK": {
+     "d": 0.0434,
+     "lo": -0.0031,
+     "hi": 0.0894,
+     "ci99": false
+    }
+   },
+   "C1": {
+    "L": {
+     "d": 0.0223,
+     "lo": 0.0062,
+     "hi": 0.039,
+     "ci99": true
+    },
+    "DISC": {
+     "d": 0.0255,
+     "lo": -0.0141,
+     "hi": 0.0717,
+     "ci99": false
+    },
+    "LEAK": {
+     "d": 0.0208,
+     "lo": -0.0166,
+     "hi": 0.0671,
+     "ci99": false
+    }
+   },
+   "female_input_misled": 0.667
+  },
+  "same_reference": {
+   "Detector": {
+    "L": {
+     "d": 0.1325,
+     "lo": 0.0897,
+     "hi": 0.1784,
+     "ci99": true
+    },
+    "DISC": {
+     "d": 0.0773,
+     "lo": 0.0332,
+     "hi": 0.1261,
+     "ci99": true
+    },
+    "LEAK": {
+     "d": 0.048,
+     "lo": 0.0026,
+     "hi": 0.0945,
+     "ci99": true
+    }
+   },
+   "C1": {
+    "L": {
+     "d": 0.022,
+     "lo": 0.0061,
+     "hi": 0.0388,
+     "ci99": true
+    },
+    "DISC": {
+     "d": 0.0339,
+     "lo": -0.0058,
+     "hi": 0.0865,
+     "ci99": false
+    },
+    "LEAK": {
+     "d": 0.0289,
+     "lo": -0.0096,
+     "hi": 0.0779,
+     "ci99": false
+    }
+   },
+   "female_input_misled": 0.667
+  }
+ },
+ "SR-1": true
+}

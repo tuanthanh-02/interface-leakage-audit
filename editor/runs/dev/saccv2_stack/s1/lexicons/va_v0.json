@@ -1,0 +1,43 @@
+{
+ "version": "va_v0",
+ "written": "2026-09-18, before any S1 emission",
+ "rule": "value-invariant realization of a planned span: lower-cased surface (a leading possessive determiner my/his/her/their/our/your is kept, his/her -> their) is looked up by attribute; singular vs plural from the head token tag (NNS/NNPS = plural); an indefinite article is added when the span is preceded by a/an/the so the frozen apply_edits article rule absorbs or drops it; anything not listed -> [REDACTED]",
+ "SEX": {
+  "pronoun": "frozen repair _pronoun_rep + agreement_edits (they/them/their/theirs/themselves)",
+  "title": "dropped (frozen title_drop)",
+  "nouns": {"man": ["person", "people"], "woman": ["person", "people"], "men": ["person", "people"], "women": ["person", "people"],
+            "gentleman": ["person", "people"], "gentlemen": ["person", "people"], "lady": ["person", "people"], "ladies": ["person", "people"],
+            "male": ["person", "people"], "female": ["person", "people"], "males": ["person", "people"], "females": ["person", "people"],
+            "guy": ["person", "people"], "boy": ["child", "children"], "girl": ["child", "children"], "boys": ["child", "children"], "girls": ["child", "children"],
+            "mother": ["parent", "parents"], "father": ["parent", "parents"], "mom": ["parent", "parents"], "dad": ["parent", "parents"], "mum": ["parent", "parents"],
+            "son": ["child", "children"], "daughter": ["child", "children"], "brother": ["sibling", "siblings"], "sister": ["sibling", "siblings"],
+            "grandmother": ["grandparent", "grandparents"], "grandfather": ["grandparent", "grandparents"], "grandma": ["grandparent", "grandparents"], "grandpa": ["grandparent", "grandparents"],
+            "granddaughter": ["grandchild", "grandchildren"], "grandson": ["grandchild", "grandchildren"], "aunt": ["relative", "relatives"], "uncle": ["relative", "relatives"],
+            "niece": ["relative", "relatives"], "nephew": ["relative", "relatives"],
+            "wife": ["family member", "family members"], "husband": ["family member", "family members"], "widow": ["family member", "family members"], "widower": ["family member", "family members"],
+            "fiance": ["family member", "family members"], "fiancee": ["family member", "family members"], "fiancé": ["family member", "family members"], "fiancée": ["family member", "family members"],
+            "girlfriend": ["family member", "family members"], "boyfriend": ["family member", "family members"], "bride": ["family member", "family members"], "groom": ["family member", "family members"]}
+ },
+ "RELATIONSHIP": {
+  "person_nouns": ["wife", "husband", "spouse", "partner", "widow", "widower", "fiance", "fiancee", "fiancé", "fiancée", "girlfriend", "boyfriend", "bride", "groom", "ex-wife", "ex-husband"],
+  "person_filler": ["family member", "family members"],
+  "event_nouns": ["marriage", "divorce", "wedding", "engagement", "separation", "remarriage"],
+  "event_filler": ["family matter", "family matters"],
+  "kin_nouns": "as SEX.nouns for mother/father/son/daughter/brother/sister/grand*/aunt/uncle/niece/nephew",
+  "everything_else": "[REDACTED] (married, divorced, widowed, single, engaged, separated, couple, ...)"
+ },
+ "OCCUPATION": {
+  "role_filler": ["person", "people"],
+  "role_rule": "single-token NOUN head whose WordNet noun synsets include a hyponym of person.n.01, and not a workplace noun",
+  "workplace_nouns": ["hospital", "clinic", "court", "school", "university", "college", "company", "firm", "office", "bank", "factory", "ministry", "department", "agency", "embassy", "prison", "practice", "chambers", "shop", "store", "restaurant", "farm", "station"],
+  "workplace_filler": ["place", "places"],
+  "everything_else": "[REDACTED]"
+ },
+ "EMOJI": {
+  "map": {"👨": "🧑", "👩": "🧑", "👦": "🧒", "👧": "🧒", "👴": "🧓", "👵": "🧓",
+          "👸": "🧑", "🤴": "🧑", "👰": "🧑", "🤰": "🧑", "🤱": "🧑", "🧔": "🧑",
+          "👫": "🧑‍🤝‍🧑", "👬": "🧑‍🤝‍🧑", "👭": "🧑‍🤝‍🧑",
+          "💃": "🧑", "🕺": "🧑"},
+  "strip": "the sequence U+200D followed by U+2640 or U+2642, with an optional trailing U+FE0F, is deleted"
+ }
+}

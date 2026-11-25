@@ -1,0 +1,7 @@
+corpus,arm,documents,TPS,documents_edited,TPS_edited,edited_char_share,mean_edit_regions,mlm,embedder
+medqa,Adaptive,400,0.7723,400,0.7723,0.5188,100.4,bert-base-uncased,intfloat/e5-base-v2
+medqa,LLM,200,0.8041,197,0.8011,0.0273,10.43,bert-base-uncased,intfloat/e5-base-v2
+tab,Adaptive,144,0.7809,144,0.7809,0.0547,67.14,bert-base-uncased,intfloat/e5-base-v2
+tab,LLM,91,0.7927,91,0.7927,0.0214,24.48,bert-base-uncased,intfloat/e5-base-v2
+synthpai,Adaptive,273,0.815,257,0.8034,0.0705,12.4,bert-base-uncased,intfloat/e5-base-v2
+synthpai,LLM,221,0.8262,187,0.7946,0.0285,6.65,bert-base-uncased,intfloat/e5-base-v2

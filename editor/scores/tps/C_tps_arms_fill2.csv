@@ -1,0 +1,4 @@
+corpus,arm,documents,TPS,documents_edited,TPS_edited,edited_char_share,mean_edit_regions,mlm,embedder
+medqa,INTACT,400,0.8142,385,0.807,0.0272,3.3,bert-base-uncased,intfloat/e5-base-v2
+tab,INTACT,144,0.7701,144,0.7701,0.0502,50.62,bert-base-uncased,intfloat/e5-base-v2
+synthpai,INTACT,281,0.8576,195,0.7947,0.0099,6.67,bert-base-uncased,intfloat/e5-base-v2

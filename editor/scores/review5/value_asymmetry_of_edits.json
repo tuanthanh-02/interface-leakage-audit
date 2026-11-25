@@ -1,0 +1,193 @@
+{
+ "prereg": "runs/dev/preregs/sacc_review8_prereg.md Parts N, RX",
+ "corpora": {
+  "medqa": {
+   "slots": {
+    "subject pronoun|male": {
+     "rewritten": 2020,
+     "redacted": 11,
+     "n": 2031,
+     "share_redacted": 0.005
+    },
+    "possessive determiner|male": {
+     "rewritten": 1753,
+     "redacted": 1,
+     "n": 1754,
+     "share_redacted": 0.001
+    },
+    "possessive determiner|female": {
+     "rewritten": 1306,
+     "n": 1306,
+     "share_redacted": 0.0
+    },
+    "subject pronoun|female": {
+     "rewritten": 1619,
+     "n": 1619,
+     "share_redacted": 0.0
+    },
+    "object pronoun|female": {
+     "rewritten": 160,
+     "n": 160,
+     "share_redacted": 0.0
+    },
+    "noun|male": {
+     "rewritten": 112,
+     "n": 112,
+     "share_redacted": 0.0
+    },
+    "noun|female": {
+     "rewritten": 218,
+     "n": 218,
+     "share_redacted": 0.0
+    },
+    "object pronoun|male": {
+     "rewritten": 71,
+     "n": 71,
+     "share_redacted": 0.0
+    },
+    "reflexive|male": {
+     "rewritten": 18,
+     "n": 18,
+     "share_redacted": 0.0
+    },
+    "reflexive|female": {
+     "rewritten": 8,
+     "n": 8,
+     "share_redacted": 0.0
+    },
+    "possessive pronoun|male": {
+     "rewritten": 8,
+     "n": 8,
+     "share_redacted": 0.0
+    },
+    "address|female": {
+     "redacted": 4,
+     "n": 4,
+     "share_redacted": 1.0
+    },
+    "possessive pronoun|female": {
+     "redacted": 1,
+     "n": 1,
+     "share_redacted": 1.0
+    }
+   },
+   "her_his": {
+    "her ok": 1342,
+    "her -> their, parser says object but a noun phrase follows": 94,
+    "possessive her -> them": 1,
+    "object her -> their (next word is not a noun phrase)": 29
+   },
+   "address_matches": {
+    "verb_miss|edited": 4,
+    "ms_after_number|left": 1
+   },
+   "address_examples": [
+    {
+     "doc": "MEDQA-00515",
+     "context": "re throat which caused him to miss several days at school. The p",
+     "edited": true,
+     "output": "[REDACTED]"
+    },
+    {
+     "doc": "MEDQA-00624",
+     "context": "nd a QRS complex width of 130 ms. In addition to intravenous fl",
+     "edited": false,
+     "output": null
+    },
+    {
+     "doc": "MEDQA-00641",
+     "context": "t reports that she has had to miss several days of work due to h",
+     "edited": true,
+     "output": "[REDACTED]"
+    },
+    {
+     "doc": "MEDQA-00660",
+     "context": "ecause he was afraid he might miss it. The patient is afebrile a",
+     "edited": true,
+     "output": "[REDACTED]"
+    },
+    {
+     "doc": "MEDQA-01125",
+     "context": "inful cramps and often has to miss school. The cramps are interm",
+     "edited": true,
+     "output": "[REDACTED]"
+    }
+   ]
+  },
+  "tab": {
+   "slots": {
+    "subject pronoun|male": {
+     "rewritten": 486,
+     "redacted": 73,
+     "n": 559,
+     "share_redacted": 0.131
+    },
+    "object pronoun|male": {
+     "rewritten": 143,
+     "redacted": 25,
+     "n": 168,
+     "share_redacted": 0.149
+    },
+    "possessive determiner|male": {
+     "rewritten": 446,
+     "redacted": 105,
+     "n": 551,
+     "share_redacted": 0.191
+    },
+    "possessive determiner|female": {
+     "redacted": 35,
+     "rewritten": 94,
+     "n": 129,
+     "share_redacted": 0.271
+    },
+    "subject pronoun|female": {
+     "rewritten": 91,
+     "redacted": 22,
+     "n": 113,
+     "share_redacted": 0.195
+    },
+    "noun|female": {
+     "redacted": 47,
+     "rewritten": 10,
+     "n": 57,
+     "share_redacted": 0.825
+    },
+    "possessive pronoun|male": {
+     "rewritten": 5,
+     "n": 5,
+     "share_redacted": 0.0
+    },
+    "object pronoun|female": {
+     "rewritten": 15,
+     "redacted": 8,
+     "n": 23,
+     "share_redacted": 0.348
+    },
+    "noun|male": {
+     "redacted": 24,
+     "rewritten": 4,
+     "n": 28,
+     "share_redacted": 0.857
+    },
+    "reflexive|female": {
+     "rewritten": 3,
+     "redacted": 3,
+     "n": 6,
+     "share_redacted": 0.5
+    },
+    "reflexive|male": {
+     "redacted": 1,
+     "rewritten": 4,
+     "n": 5,
+     "share_redacted": 0.2
+    }
+   },
+   "her_his": {
+    "her ok": 150,
+    "her -> their, parser says object but a noun phrase follows": 2
+   },
+   "address_matches": {},
+   "address_examples": []
+  }
+ }
+}

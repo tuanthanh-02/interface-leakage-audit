@@ -1,0 +1,558 @@
+{
+ "prereg": "runs/dev/preregs/sacc_review6_prereg.md Part B",
+ "corpora": {
+  "medqa": {
+   "sources": {
+    "B2": "runs/dev/sacc_b_cmp/evaluation/medqa_gpt4omini/evaluation/e2_medqa_B2-B3-B6_full_gpt4omini.json",
+    "B3": "runs/dev/sacc_b_cmp/evaluation/medqa_gpt4omini/evaluation/e2_medqa_B2-B3-B6_full_gpt4omini.json",
+    "C1": "runs/dev/sacc_table1c/evaluation/medqa_gpt4omini/evaluation/e2_medqa_Detector-INTACT-Adaptive-SACC-C1-SACC_N-SACC_E1-SACC_E_full_gpt4omini.json + binder fix v3 (fix3 pass)",
+    "SACC_Nstar": "runs/dev/realfact/perperm_SACC_N2.jsonl + fixed texts on changed documents (sacc_review fix2 pass) + binder fix v3 (fix3 pass)"
+   },
+   "contrasts": {
+    "B2_minus_B3": {
+     "L": {
+      "d": -0.0062,
+      "lo": -0.0176,
+      "hi": 0.0012,
+      "ci99": false
+     },
+     "DISC": {
+      "d": -0.0039,
+      "lo": -0.0148,
+      "hi": 0.0025,
+      "ci99": false
+     },
+     "LEAK": {
+      "d": -0.0052,
+      "lo": -0.0158,
+      "hi": 0.0014,
+      "ci99": false
+     },
+     "SIGNED": {
+      "d": -0.0051,
+      "lo": -0.0169,
+      "hi": 0.0032,
+      "ci99": false
+     },
+     "n": {
+      "entries": 2156,
+      "documents": 1201
+     }
+    },
+    "B3_minus_C1": {
+     "L": {
+      "d": 0.0001,
+      "lo": -0.0037,
+      "hi": 0.0053,
+      "ci99": false
+     },
+     "DISC": {
+      "d": -0.0016,
+      "lo": -0.004,
+      "hi": 0.0004,
+      "ci99": false
+     },
+     "LEAK": {
+      "d": -0.0026,
+      "lo": -0.0062,
+      "hi": 0.0001,
+      "ci99": false
+     },
+     "SIGNED": {
+      "d": -0.0011,
+      "lo": -0.0059,
+      "hi": 0.004,
+      "ci99": false
+     },
+     "n": {
+      "entries": 2156,
+      "documents": 1201
+     }
+    },
+    "B3_minus_SACC_Nstar": {
+     "L": {
+      "d": 0.0239,
+      "lo": 0.0123,
+      "hi": 0.0347,
+      "ci99": true
+     },
+     "DISC": {
+      "d": 0.0372,
+      "lo": 0.0198,
+      "hi": 0.0537,
+      "ci99": true
+     },
+     "LEAK": {
+      "d": 0.0211,
+      "lo": 0.0076,
+      "hi": 0.0351,
+      "ci99": true
+     },
+     "SIGNED": {
+      "d": -0.0042,
+      "lo": -0.0213,
+      "hi": 0.0129,
+      "ci99": false
+     },
+     "n": {
+      "entries": 2156,
+      "documents": 1201
+     }
+    },
+    "B2_minus_C1": {
+     "L": {
+      "d": -0.0062,
+      "lo": -0.0186,
+      "hi": 0.0034,
+      "ci99": false
+     },
+     "DISC": {
+      "d": -0.0055,
+      "lo": -0.0165,
+      "hi": 0.0015,
+      "ci99": false
+     },
+     "LEAK": {
+      "d": -0.0078,
+      "lo": -0.0193,
+      "hi": -0.0002,
+      "ci99": true
+     },
+     "SIGNED": {
+      "d": -0.0062,
+      "lo": -0.0192,
+      "hi": 0.0044,
+      "ci99": false
+     },
+     "n": {
+      "entries": 2156,
+      "documents": 1201
+     }
+    }
+   },
+   "levels": {
+    "B2": {
+     "L": 0.6528,
+     "DISC": 0.9315,
+     "LEAK": 0.742
+    },
+    "B3": {
+     "L": 0.659,
+     "DISC": 0.9355,
+     "LEAK": 0.7472
+    },
+    "C1": {
+     "L": 0.6589,
+     "DISC": 0.937,
+     "LEAK": 0.7498
+    },
+    "SACC_Nstar": {
+     "L": 0.6351,
+     "DISC": 0.8982,
+     "LEAK": 0.7261
+    }
+   },
+   "unli": {
+    "C1_minus_B3": {
+     "documents": 1247,
+     "d": -0.0005,
+     "lo95": -0.0018,
+     "hi95": 0.001
+    },
+    "B3_minus_B2": {
+     "documents": 1247,
+     "d": 0.0043,
+     "lo95": 0.0017,
+     "hi95": 0.0071
+    },
+    "SACC_Nstar_minus_B3": {
+     "documents": 1247,
+     "d": 0.0408,
+     "lo95": 0.0323,
+     "hi95": 0.0494
+    }
+   },
+   "unli_levels": {
+    "B2": 0.6608,
+    "B3": 0.6651,
+    "C1": 0.6646,
+    "SACC_Nstar": 0.7059
+   },
+   "edits_applied_phase16": {
+    "P16_B2_GLOBAL_MASK": 7632,
+    "P16_B3_GLOBAL_NP_MASK": 7390,
+    "P16_B4_SACC_P14": 7182
+   }
+  },
+  "tab": {
+   "sources": {
+    "B2": "runs/dev/sacc_b_cmp/evaluation/tab_gpt4omini/evaluation/e2_tab_B2-B3-B6_full_gpt4omini.json",
+    "B3": "runs/dev/sacc_b_cmp/evaluation/tab_gpt4omini/evaluation/e2_tab_B2-B3-B6_full_gpt4omini.json",
+    "C1": "runs/dev/sacc_table1c/evaluation/tab_gpt4omini/evaluation/e2_tab_Detector-INTACT-Adaptive-SACC-C1-SACC_N-SACC_E1-SACC_E_full_gpt4omini.json + binder fix v3 (fix3 pass)",
+    "SACC_Nstar": "runs/dev/sacc_table1c/evaluation/tab_gpt4omini/evaluation/e2_tab_Detector-INTACT-Adaptive-SACC-C1-SACC_N-SACC_E1-SACC_E_full_gpt4omini.json + fixed texts on changed documents (sacc_review fix2 pass) + binder fix v3 (fix3 pass)"
+   },
+   "contrasts": {
+    "B2_minus_B3": {
+     "L": {
+      "d": -0.011,
+      "lo": -0.0609,
+      "hi": 0.0152,
+      "ci99": false
+     },
+     "DISC": {
+      "d": 0.003,
+      "lo": -0.0583,
+      "hi": 0.06,
+      "ci99": false
+     },
+     "LEAK": {
+      "d": 0.0069,
+      "lo": -0.0545,
+      "hi": 0.0617,
+      "ci99": false
+     },
+     "SIGNED": {
+      "d": -0.0137,
+      "lo": -0.0643,
+      "hi": 0.0135,
+      "ci99": false
+     },
+     "n": {
+      "entries": 505,
+      "documents": 140
+     }
+    },
+    "B3_minus_C1": {
+     "L": {
+      "d": 0.0092,
+      "lo": -0.0011,
+      "hi": 0.0211,
+      "ci99": false
+     },
+     "DISC": {
+      "d": 0.0279,
+      "lo": -0.0025,
+      "hi": 0.0634,
+      "ci99": false
+     },
+     "LEAK": {
+      "d": 0.0078,
+      "lo": -0.0144,
+      "hi": 0.0347,
+      "ci99": false
+     },
+     "SIGNED": {
+      "d": 0.0056,
+      "lo": -0.0065,
+      "hi": 0.019,
+      "ci99": false
+     },
+     "n": {
+      "entries": 505,
+      "documents": 140
+     }
+    },
+    "B3_minus_SACC_Nstar": {
+     "L": {
+      "d": 0.0315,
+      "lo": 0.0159,
+      "hi": 0.0483,
+      "ci99": true
+     },
+     "DISC": {
+      "d": 0.0535,
+      "lo": 0.0059,
+      "hi": 0.1014,
+      "ci99": true
+     },
+     "LEAK": {
+      "d": 0.0287,
+      "lo": -0.0105,
+      "hi": 0.072,
+      "ci99": false
+     },
+     "SIGNED": {
+      "d": 0.0211,
+      "lo": 0.0022,
+      "hi": 0.0408,
+      "ci99": true
+     },
+     "n": {
+      "entries": 505,
+      "documents": 140
+     }
+    },
+    "B2_minus_C1": {
+     "L": {
+      "d": -0.0017,
+      "lo": -0.0514,
+      "hi": 0.0231,
+      "ci99": false
+     },
+     "DISC": {
+      "d": 0.0309,
+      "lo": -0.0319,
+      "hi": 0.0878,
+      "ci99": false
+     },
+     "LEAK": {
+      "d": 0.0147,
+      "lo": -0.0432,
+      "hi": 0.0633,
+      "ci99": false
+     },
+     "SIGNED": {
+      "d": -0.0081,
+      "lo": -0.0566,
+      "hi": 0.0189,
+      "ci99": false
+     },
+     "n": {
+      "entries": 505,
+      "documents": 140
+     }
+    }
+   },
+   "levels": {
+    "B2": {
+     "L": 0.4438,
+     "DISC": 0.8481,
+     "LEAK": 0.6345
+    },
+    "B3": {
+     "L": 0.4547,
+     "DISC": 0.8451,
+     "LEAK": 0.6276
+    },
+    "C1": {
+     "L": 0.4455,
+     "DISC": 0.8171,
+     "LEAK": 0.6197
+    },
+    "SACC_Nstar": {
+     "L": 0.4232,
+     "DISC": 0.7916,
+     "LEAK": 0.5989
+    }
+   },
+   "unli": {
+    "C1_minus_B3": {
+     "documents": 144,
+     "d": 0.0021,
+     "lo95": -0.0025,
+     "hi95": 0.0074
+    },
+    "B3_minus_B2": {
+     "documents": 144,
+     "d": 0.0256,
+     "lo95": 0.0151,
+     "hi95": 0.0371
+    },
+    "SACC_Nstar_minus_B3": {
+     "documents": 144,
+     "d": 0.0021,
+     "lo95": -0.0059,
+     "hi95": 0.0098
+    }
+   },
+   "unli_levels": {
+    "B2": 0.2911,
+    "B3": 0.3166,
+    "C1": 0.3187,
+    "SACC_Nstar": 0.3188
+   },
+   "edits_applied_phase16": {
+    "P16_B2_GLOBAL_MASK": 2771,
+    "P16_B3_GLOBAL_NP_MASK": 2031,
+    "P16_B4_SACC_P14": 1775
+   }
+  },
+  "synthpai": {
+   "sources": {
+    "B2": "runs/dev/sacc_b_cmp/evaluation/synthpai_gpt4omini/evaluation/e2_synthpai_B2-B3-B6_full_gpt4omini.json",
+    "B3": "runs/dev/sacc_b_cmp/evaluation/synthpai_gpt4omini/evaluation/e2_synthpai_B2-B3-B6_full_gpt4omini.json",
+    "C1": "runs/dev/sacc_table1c/evaluation/synthpai_gpt4omini/evaluation/e2_synthpai_Detector-INTACT-Adaptive-SACC-C1-SACC_N-SACC_E1-SACC_E_full_gpt4omini.json + binder fix v3 (fix3 pass)",
+    "SACC_Nstar": "runs/dev/sacc_table1c/evaluation/synthpai_gpt4omini/evaluation/e2_synthpai_Detector-INTACT-Adaptive-SACC-C1-SACC_N-SACC_E1-SACC_E_full_gpt4omini.json + fixed texts on changed documents (sacc_review fix2 pass) + binder fix v3 (fix3 pass)"
+   },
+   "contrasts": {
+    "B2_minus_B3": {
+     "L": {
+      "d": -0.0,
+      "lo": -0.0,
+      "hi": 0.0,
+      "ci99": false
+     },
+     "DISC": {
+      "d": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "ci99": false
+     },
+     "LEAK": {
+      "d": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "ci99": false
+     },
+     "SIGNED": {
+      "d": -0.0,
+      "lo": -0.0,
+      "hi": 0.0,
+      "ci99": false
+     },
+     "n": {
+      "entries": 351,
+      "documents": 246
+     }
+    },
+    "B3_minus_C1": {
+     "L": {
+      "d": -0.0059,
+      "lo": -0.0188,
+      "hi": 0.0,
+      "ci99": false
+     },
+     "DISC": {
+      "d": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "ci99": false
+     },
+     "LEAK": {
+      "d": -0.0023,
+      "lo": -0.0097,
+      "hi": 0.0,
+      "ci99": false
+     },
+     "SIGNED": {
+      "d": -0.0065,
+      "lo": -0.0218,
+      "hi": 0.0023,
+      "ci99": false
+     },
+     "n": {
+      "entries": 351,
+      "documents": 246
+     }
+    },
+    "B3_minus_SACC_Nstar": {
+     "L": {
+      "d": -0.0059,
+      "lo": -0.0188,
+      "hi": 0.0,
+      "ci99": false
+     },
+     "DISC": {
+      "d": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "ci99": false
+     },
+     "LEAK": {
+      "d": -0.0023,
+      "lo": -0.0097,
+      "hi": 0.0,
+      "ci99": false
+     },
+     "SIGNED": {
+      "d": -0.0065,
+      "lo": -0.0218,
+      "hi": 0.0023,
+      "ci99": false
+     },
+     "n": {
+      "entries": 351,
+      "documents": 246
+     }
+    },
+    "B2_minus_C1": {
+     "L": {
+      "d": -0.0059,
+      "lo": -0.0188,
+      "hi": 0.0,
+      "ci99": false
+     },
+     "DISC": {
+      "d": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "ci99": false
+     },
+     "LEAK": {
+      "d": -0.0023,
+      "lo": -0.0097,
+      "hi": 0.0,
+      "ci99": false
+     },
+     "SIGNED": {
+      "d": -0.0065,
+      "lo": -0.0218,
+      "hi": 0.0023,
+      "ci99": false
+     },
+     "n": {
+      "entries": 351,
+      "documents": 246
+     }
+    }
+   },
+   "levels": {
+    "B2": {
+     "L": 0.699,
+     "DISC": 0.8347,
+     "LEAK": 0.7826
+    },
+    "B3": {
+     "L": 0.699,
+     "DISC": 0.8347,
+     "LEAK": 0.7826
+    },
+    "C1": {
+     "L": 0.7049,
+     "DISC": 0.8347,
+     "LEAK": 0.7849
+    },
+    "SACC_Nstar": {
+     "L": 0.7049,
+     "DISC": 0.8347,
+     "LEAK": 0.7849
+    }
+   },
+   "unli": {
+    "C1_minus_B3": {
+     "documents": 272,
+     "d": -0.0002,
+     "lo95": -0.0005,
+     "hi95": 0.0
+    },
+    "B3_minus_B2": {
+     "documents": 272,
+     "d": 0.0,
+     "lo95": 0.0,
+     "hi95": 0.0
+    },
+    "SACC_Nstar_minus_B3": {
+     "documents": 272,
+     "d": -0.0002,
+     "lo95": -0.0005,
+     "hi95": 0.0
+    }
+   },
+   "unli_levels": {
+    "B2": 0.7797,
+    "B3": 0.7797,
+    "C1": 0.7796,
+    "SACC_Nstar": 0.7796
+   },
+   "edits_applied_phase16": {
+    "P16_B2_GLOBAL_MASK": 131,
+    "P16_B3_GLOBAL_NP_MASK": 130,
+    "P16_B4_SACC_P14": 120
+   }
+  }
+ },
+ "B-1": true,
+ "B-2": false,
+ "B-3": true,
+ "kill": false
+}

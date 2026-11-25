@@ -1,0 +1,138 @@
+{
+ "prereg": "runs/dev/preregs/sacc_review12_prereg.md Part P",
+ "privacy": {
+  "PS_input_minus_PS_SACC": {
+   "L": {
+    "d": 0.0719,
+    "lo": 0.0306,
+    "hi": 0.1163,
+    "ci99": true
+   },
+   "DISC": {
+    "d": 0.009,
+    "lo": -0.0069,
+    "hi": 0.0302,
+    "ci99": false
+   },
+   "LEAK": {
+    "d": 0.0126,
+    "lo": -0.0354,
+    "hi": 0.0624,
+    "ci99": false
+   },
+   "n": 505
+  },
+  "PS_B3N_minus_PS_SACC": {
+   "L": {
+    "d": -0.0007,
+    "lo": -0.0109,
+    "hi": 0.0074,
+    "ci99": false
+   },
+   "DISC": {
+    "d": 0.0015,
+    "lo": -0.0086,
+    "hi": 0.014,
+    "ci99": false
+   },
+   "LEAK": {
+    "d": 0.0026,
+    "lo": -0.0063,
+    "hi": 0.014,
+    "ci99": false
+   },
+   "n": 505
+  },
+  "PS_GPN_minus_PS_SACC": {
+   "L": {
+    "d": 0.0005,
+    "lo": -0.0102,
+    "hi": 0.0089,
+    "ci99": false
+   },
+   "DISC": {
+    "d": -0.0008,
+    "lo": -0.0088,
+    "hi": 0.0075,
+    "ci99": false
+   },
+   "LEAK": {
+    "d": -0.001,
+    "lo": -0.0072,
+    "hi": 0.0053,
+    "ci99": false
+   },
+   "n": 505
+  },
+  "PS_GN_minus_PS_SACC": {
+   "L": {
+    "d": -0.0148,
+    "lo": -0.0661,
+    "hi": 0.0089,
+    "ci99": false
+   },
+   "DISC": {
+    "d": 0.0066,
+    "lo": -0.0589,
+    "hi": 0.0714,
+    "ci99": false
+   },
+   "LEAK": {
+    "d": 0.0093,
+    "lo": -0.0532,
+    "hi": 0.0723,
+    "ci99": false
+   },
+   "n": 505
+  }
+ },
+ "unli": {
+  "PS_SACC_minus_PS_B3N": {
+   "documents": 144,
+   "d": 0.0033,
+   "lo95": -0.0001,
+   "hi95": 0.0081
+  },
+  "PS_SACC_minus_PS_GPN": {
+   "documents": 144,
+   "d": 0.0027,
+   "lo95": -0.0013,
+   "hi95": 0.0077
+  },
+  "PS_SACC_minus_PS_GN": {
+   "documents": 144,
+   "d": 0.0233,
+   "lo95": 0.0121,
+   "hi95": 0.0353
+  },
+  "levels": {
+   "C1": 0.3221,
+   "PS_input": 0.3012,
+   "PS_SACC": 0.2959,
+   "PS_B3N": 0.2927,
+   "PS_GPN": 0.2932,
+   "PS_GN": 0.2726
+  }
+ },
+ "sites": {
+  "SACC": 1884,
+  "B3N": 2029,
+  "GPN": 1988,
+  "GN": 2769
+ },
+ "unresolved_share": {
+  "PS": 0.819,
+  "groups": {
+   "nonperson": 740,
+   "unresolved": 1590,
+   "other_occ": 96,
+   "direct": 325,
+   "other_sexrel": 62,
+   "relational": 26
+  },
+  "edited": 1941
+ },
+ "P-1": false,
+ "P-2": false,
+ "P-3": true
+}

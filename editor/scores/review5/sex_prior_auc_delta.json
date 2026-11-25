@@ -1,0 +1,816 @@
+{
+ "prereg": "runs/dev/preregs/sacc_review8_prereg.md Part V",
+ "corpora": {
+  "medqa": {
+   "eligibility": {
+    "gold": {
+     "female": {
+      "entries": 733,
+      "excluded": 0.045,
+      "prior_mean": 0.495
+     },
+     "male": {
+      "entries": 835,
+      "excluded": 0.026,
+      "prior_mean": 0.508
+     }
+    },
+    "letter": {
+     "('female', 'A')": {
+      "entries": 522,
+      "excluded": 0.048,
+      "prior_mean": 0.5
+     },
+     "('female', 'B')": {
+      "entries": 179,
+      "excluded": 0.039,
+      "prior_mean": 0.48
+     },
+     "('female', 'C')": {
+      "entries": 24,
+      "excluded": 0.042,
+      "prior_mean": 0.507
+     },
+     "('female', 'D')": {
+      "entries": 5,
+      "excluded": 0.0,
+      "prior_mean": 0.572
+     },
+     "('female', 'E')": {
+      "entries": 3,
+      "excluded": 0.0,
+      "prior_mean": 0.412
+     },
+     "('male', 'A')": {
+      "entries": 685,
+      "excluded": 0.032,
+      "prior_mean": 0.508
+     },
+     "('male', 'B')": {
+      "entries": 109,
+      "excluded": 0.0,
+      "prior_mean": 0.505
+     },
+     "('male', 'C')": {
+      "entries": 35,
+      "excluded": 0.0,
+      "prior_mean": 0.521
+     },
+     "('male', 'D')": {
+      "entries": 5,
+      "excluded": 0.0,
+      "prior_mean": 0.502
+     },
+     "('male', 'F')": {
+      "entries": 1,
+      "excluded": 0.0,
+      "prior_mean": 0.502
+     }
+    },
+    "gold_first": {
+     "('female', 0)": {
+      "entries": 4,
+      "excluded": 0.0,
+      "prior_mean": 0.002
+     },
+     "('female', 1)": {
+      "entries": 24,
+      "excluded": 0.0,
+      "prior_mean": 0.125
+     },
+     "('female', 2)": {
+      "entries": 84,
+      "excluded": 0.0,
+      "prior_mean": 0.249
+     },
+     "('female', 3)": {
+      "entries": 158,
+      "excluded": 0.0,
+      "prior_mean": 0.372
+     },
+     "('female', 4)": {
+      "entries": 198,
+      "excluded": 0.0,
+      "prior_mean": 0.497
+     },
+     "('female', 5)": {
+      "entries": 160,
+      "excluded": 0.0,
+      "prior_mean": 0.62
+     },
+     "('female', 6)": {
+      "entries": 72,
+      "excluded": 0.0,
+      "prior_mean": 0.745
+     },
+     "('female', 7)": {
+      "entries": 29,
+      "excluded": 1.0,
+      "prior_mean": 0.869
+     },
+     "('female', 8)": {
+      "entries": 4,
+      "excluded": 1.0,
+      "prior_mean": 0.992
+     },
+     "('male', 0)": {
+      "entries": 3,
+      "excluded": 0.0,
+      "prior_mean": 0.001
+     },
+     "('male', 1)": {
+      "entries": 21,
+      "excluded": 0.0,
+      "prior_mean": 0.129
+     },
+     "('male', 2)": {
+      "entries": 78,
+      "excluded": 0.0,
+      "prior_mean": 0.253
+     },
+     "('male', 3)": {
+      "entries": 168,
+      "excluded": 0.0,
+      "prior_mean": 0.379
+     },
+     "('male', 4)": {
+      "entries": 264,
+      "excluded": 0.0,
+      "prior_mean": 0.502
+     },
+     "('male', 5)": {
+      "entries": 183,
+      "excluded": 0.0,
+      "prior_mean": 0.626
+     },
+     "('male', 6)": {
+      "entries": 96,
+      "excluded": 0.0,
+      "prior_mean": 0.75
+     },
+     "('male', 7)": {
+      "entries": 21,
+      "excluded": 1.0,
+      "prior_mean": 0.874
+     },
+     "('male', 8)": {
+      "entries": 1,
+      "excluded": 1.0,
+      "prior_mean": 0.999
+     }
+    }
+   },
+   "auc_sex": {
+    "entries": 1513,
+    "levels": {
+     "Detector": 0.8884,
+     "B2": 0.7367,
+     "B6": 0.719,
+     "C1": 0.7387,
+     "SACC_Nstar": 0.7194
+    },
+    "minus_SACC": {
+     "Detector": {
+      "d": 0.169,
+      "lo": 0.1381,
+      "hi": 0.1981
+     },
+     "B2": {
+      "d": 0.0173,
+      "lo": 0.0012,
+      "hi": 0.032
+     },
+     "B6": {
+      "d": -0.0004,
+      "lo": -0.0091,
+      "hi": 0.0071
+     },
+     "C1": {
+      "d": 0.0193,
+      "lo": 0.0052,
+      "hi": 0.0336
+     }
+    }
+   },
+   "delta": {
+    "0.02": {
+     "Detector": {
+      "DISC": {
+       "d": 0.0481,
+       "lo": 0.0353,
+       "hi": 0.0599,
+       "ci99": true
+      },
+      "LEAK": {
+       "d": 0.1198,
+       "lo": 0.1016,
+       "hi": 0.1397,
+       "ci99": true
+      }
+     },
+     "B2": {
+      "DISC": {
+       "d": 0.0227,
+       "lo": 0.0062,
+       "hi": 0.037,
+       "ci99": true
+      },
+      "LEAK": {
+       "d": 0.0079,
+       "lo": -0.0098,
+       "hi": 0.0234,
+       "ci99": false
+      }
+     },
+     "B6": {
+      "DISC": {
+       "d": -0.0023,
+       "lo": -0.0135,
+       "hi": 0.0059,
+       "ci99": false
+      },
+      "LEAK": {
+       "d": -0.0062,
+       "lo": -0.0189,
+       "hi": 0.0036,
+       "ci99": false
+      }
+     },
+     "C1": {
+      "DISC": {
+       "d": 0.0259,
+       "lo": 0.0139,
+       "hi": 0.038,
+       "ci99": true
+      },
+      "LEAK": {
+       "d": 0.0144,
+       "lo": 0.0016,
+       "hi": 0.0287,
+       "ci99": true
+      }
+     }
+    },
+    "0.05": {
+     "Detector": {
+      "DISC": {
+       "d": 0.0921,
+       "lo": 0.0759,
+       "hi": 0.1081,
+       "ci99": true
+      },
+      "LEAK": {
+       "d": 0.1439,
+       "lo": 0.1252,
+       "hi": 0.1636,
+       "ci99": true
+      }
+     },
+     "B2": {
+      "DISC": {
+       "d": 0.0333,
+       "lo": 0.0132,
+       "hi": 0.0529,
+       "ci99": true
+      },
+      "LEAK": {
+       "d": 0.0159,
+       "lo": -0.0018,
+       "hi": 0.0315,
+       "ci99": false
+      }
+     },
+     "B6": {
+      "DISC": {
+       "d": -0.0027,
+       "lo": -0.0161,
+       "hi": 0.0081,
+       "ci99": false
+      },
+      "LEAK": {
+       "d": -0.0046,
+       "lo": -0.0175,
+       "hi": 0.0055,
+       "ci99": false
+      }
+     },
+     "C1": {
+      "DISC": {
+       "d": 0.0388,
+       "lo": 0.0216,
+       "hi": 0.0549,
+       "ci99": true
+      },
+      "LEAK": {
+       "d": 0.0237,
+       "lo": 0.0104,
+       "hi": 0.0376,
+       "ci99": true
+      }
+     }
+    },
+    "0.1": {
+     "Detector": {
+      "DISC": {
+       "d": 0.1313,
+       "lo": 0.1089,
+       "hi": 0.1513,
+       "ci99": true
+      },
+      "LEAK": {
+       "d": 0.1616,
+       "lo": 0.1416,
+       "hi": 0.1801,
+       "ci99": true
+      }
+     },
+     "B2": {
+      "DISC": {
+       "d": 0.048,
+       "lo": 0.0263,
+       "hi": 0.0673,
+       "ci99": true
+      },
+      "LEAK": {
+       "d": 0.0211,
+       "lo": 0.0041,
+       "hi": 0.0381,
+       "ci99": true
+      }
+     },
+     "B6": {
+      "DISC": {
+       "d": -0.0032,
+       "lo": -0.0162,
+       "hi": 0.0079,
+       "ci99": false
+      },
+      "LEAK": {
+       "d": -0.0025,
+       "lo": -0.0158,
+       "hi": 0.008,
+       "ci99": false
+      }
+     },
+     "C1": {
+      "DISC": {
+       "d": 0.0546,
+       "lo": 0.0342,
+       "hi": 0.0731,
+       "ci99": true
+      },
+      "LEAK": {
+       "d": 0.0279,
+       "lo": 0.0147,
+       "hi": 0.0427,
+       "ci99": true
+      }
+     }
+    }
+   }
+  },
+  "tab": {
+   "eligibility": {
+    "gold": {
+     "female": {
+      "entries": 87,
+      "excluded": 0.345,
+      "prior_mean": 0.485
+     },
+     "male": {
+      "entries": 296,
+      "excluded": 0.368,
+      "prior_mean": 0.5
+     }
+    },
+    "letter": {
+     "('female', 'A')": {
+      "entries": 22,
+      "excluded": 0.364,
+      "prior_mean": 0.483
+     },
+     "('female', 'B')": {
+      "entries": 24,
+      "excluded": 0.375,
+      "prior_mean": 0.497
+     },
+     "('female', 'C')": {
+      "entries": 25,
+      "excluded": 0.24,
+      "prior_mean": 0.456
+     },
+     "('female', 'D')": {
+      "entries": 9,
+      "excluded": 0.222,
+      "prior_mean": 0.418
+     },
+     "('female', 'E')": {
+      "entries": 6,
+      "excluded": 0.833,
+      "prior_mean": 0.683
+     },
+     "('female', 'F')": {
+      "entries": 1,
+      "excluded": 0.0,
+      "prior_mean": 0.373
+     },
+     "('male', 'A')": {
+      "entries": 122,
+      "excluded": 0.311,
+      "prior_mean": 0.482
+     },
+     "('male', 'B')": {
+      "entries": 110,
+      "excluded": 0.427,
+      "prior_mean": 0.505
+     },
+     "('male', 'C')": {
+      "entries": 42,
+      "excluded": 0.452,
+      "prior_mean": 0.546
+     },
+     "('male', 'D')": {
+      "entries": 14,
+      "excluded": 0.286,
+      "prior_mean": 0.498
+     },
+     "('male', 'E')": {
+      "entries": 4,
+      "excluded": 0.25,
+      "prior_mean": 0.532
+     },
+     "('male', 'F')": {
+      "entries": 4,
+      "excluded": 0.0,
+      "prior_mean": 0.413
+     }
+    },
+    "gold_first": {
+     "('female', 0)": {
+      "entries": 1,
+      "excluded": 0.0,
+      "prior_mean": 0.007
+     },
+     "('female', 1)": {
+      "entries": 4,
+      "excluded": 0.0,
+      "prior_mean": 0.128
+     },
+     "('female', 2)": {
+      "entries": 8,
+      "excluded": 0.0,
+      "prior_mean": 0.25
+     },
+     "('female', 3)": {
+      "entries": 25,
+      "excluded": 0.0,
+      "prior_mean": 0.373
+     },
+     "('female', 4)": {
+      "entries": 19,
+      "excluded": 0.0,
+      "prior_mean": 0.495
+     },
+     "('female', 5)": {
+      "entries": 16,
+      "excluded": 1.0,
+      "prior_mean": 0.62
+     },
+     "('female', 6)": {
+      "entries": 9,
+      "excluded": 1.0,
+      "prior_mean": 0.743
+     },
+     "('female', 7)": {
+      "entries": 5,
+      "excluded": 1.0,
+      "prior_mean": 0.861
+     },
+     "('male', 0)": {
+      "entries": 3,
+      "excluded": 0.0,
+      "prior_mean": 0.013
+     },
+     "('male', 1)": {
+      "entries": 8,
+      "excluded": 0.0,
+      "prior_mean": 0.133
+     },
+     "('male', 2)": {
+      "entries": 38,
+      "excluded": 0.0,
+      "prior_mean": 0.256
+     },
+     "('male', 3)": {
+      "entries": 66,
+      "excluded": 0.0,
+      "prior_mean": 0.38
+     },
+     "('male', 4)": {
+      "entries": 72,
+      "excluded": 0.0,
+      "prior_mean": 0.503
+     },
+     "('male', 5)": {
+      "entries": 62,
+      "excluded": 1.0,
+      "prior_mean": 0.626
+     },
+     "('male', 6)": {
+      "entries": 33,
+      "excluded": 1.0,
+      "prior_mean": 0.749
+     },
+     "('male', 7)": {
+      "entries": 12,
+      "excluded": 1.0,
+      "prior_mean": 0.872
+     },
+     "('male', 8)": {
+      "entries": 2,
+      "excluded": 1.0,
+      "prior_mean": 0.993
+     }
+    }
+   },
+   "auc_sex": {
+    "entries": 244,
+    "levels": {
+     "Detector": 0.4873,
+     "B2": 0.4855,
+     "B6": 0.4291,
+     "C1": 0.4856,
+     "SACC_Nstar": 0.4349
+    },
+    "minus_SACC": {
+     "Detector": {
+      "d": 0.0524,
+      "lo": -0.0898,
+      "hi": 0.1826
+     },
+     "B2": {
+      "d": 0.0506,
+      "lo": 0.0006,
+      "hi": 0.0994
+     },
+     "B6": {
+      "d": -0.0058,
+      "lo": -0.0544,
+      "hi": 0.0478
+     },
+     "C1": {
+      "d": 0.0506,
+      "lo": 0.0046,
+      "hi": 0.1006
+     }
+    }
+   },
+   "delta": {
+    "0.02": {
+     "Detector": {
+      "DISC": {
+       "d": 0.0332,
+       "lo": 0.0074,
+       "hi": 0.0663,
+       "ci99": true
+      },
+      "LEAK": {
+       "d": 0.0112,
+       "lo": -0.0321,
+       "hi": 0.0538,
+       "ci99": false
+      }
+     },
+     "B2": {
+      "DISC": {
+       "d": 0.0298,
+       "lo": -0.0343,
+       "hi": 0.0827,
+       "ci99": false
+      },
+      "LEAK": {
+       "d": 0.0127,
+       "lo": -0.0478,
+       "hi": 0.0588,
+       "ci99": false
+      }
+     },
+     "B6": {
+      "DISC": {
+       "d": -0.0031,
+       "lo": -0.0627,
+       "hi": 0.0377,
+       "ci99": false
+      },
+      "LEAK": {
+       "d": 0.0014,
+       "lo": -0.0577,
+       "hi": 0.0472,
+       "ci99": false
+      }
+     },
+     "C1": {
+      "DISC": {
+       "d": 0.0218,
+       "lo": -0.0066,
+       "hi": 0.0536,
+       "ci99": false
+      },
+      "LEAK": {
+       "d": 0.0101,
+       "lo": -0.016,
+       "hi": 0.0371,
+       "ci99": false
+      }
+     }
+    },
+    "0.05": {
+     "Detector": {
+      "DISC": {
+       "d": 0.075,
+       "lo": 0.0331,
+       "hi": 0.1222,
+       "ci99": true
+      },
+      "LEAK": {
+       "d": 0.0434,
+       "lo": -0.0031,
+       "hi": 0.0894,
+       "ci99": false
+      }
+     },
+     "B2": {
+      "DISC": {
+       "d": 0.0565,
+       "lo": -0.0137,
+       "hi": 0.1229,
+       "ci99": false
+      },
+      "LEAK": {
+       "d": 0.0356,
+       "lo": -0.0304,
+       "hi": 0.0982,
+       "ci99": false
+      }
+     },
+     "B6": {
+      "DISC": {
+       "d": 0.009,
+       "lo": -0.0505,
+       "hi": 0.0545,
+       "ci99": false
+      },
+      "LEAK": {
+       "d": 0.0038,
+       "lo": -0.0591,
+       "hi": 0.047,
+       "ci99": false
+      }
+     },
+     "C1": {
+      "DISC": {
+       "d": 0.0255,
+       "lo": -0.0141,
+       "hi": 0.0717,
+       "ci99": false
+      },
+      "LEAK": {
+       "d": 0.0208,
+       "lo": -0.0166,
+       "hi": 0.0671,
+       "ci99": false
+      }
+     }
+    },
+    "0.1": {
+     "Detector": {
+      "DISC": {
+       "d": 0.0959,
+       "lo": 0.0415,
+       "hi": 0.1561,
+       "ci99": true
+      },
+      "LEAK": {
+       "d": 0.0589,
+       "lo": 0.0094,
+       "hi": 0.1124,
+       "ci99": true
+      }
+     },
+     "B2": {
+      "DISC": {
+       "d": 0.0313,
+       "lo": -0.0248,
+       "hi": 0.078,
+       "ci99": false
+      },
+      "LEAK": {
+       "d": 0.0188,
+       "lo": -0.0342,
+       "hi": 0.0597,
+       "ci99": false
+      }
+     },
+     "B6": {
+      "DISC": {
+       "d": -0.0029,
+       "lo": -0.0658,
+       "hi": 0.0524,
+       "ci99": false
+      },
+      "LEAK": {
+       "d": -0.0069,
+       "lo": -0.0684,
+       "hi": 0.0354,
+       "ci99": false
+      }
+     },
+     "C1": {
+      "DISC": {
+       "d": 0.0115,
+       "lo": -0.0285,
+       "hi": 0.0493,
+       "ci99": false
+      },
+      "LEAK": {
+       "d": 0.0093,
+       "lo": -0.0222,
+       "hi": 0.0426,
+       "ci99": false
+      }
+     }
+    }
+   },
+   "input_misled_by": {
+    "female|IDENTIFIABLE_BY_STRING": {
+     "n": 41,
+     "misled": 0.707
+    },
+    "female|SUBJECT_NOT_IDENTIFIABLE_BY_RULE": {
+     "n": 16,
+     "misled": 0.562
+    },
+    "female|letter A": {
+     "n": 14,
+     "misled": 0.143
+    },
+    "female|letter B": {
+     "n": 15,
+     "misled": 0.8
+    },
+    "female|letter C": {
+     "n": 19,
+     "misled": 0.947
+    },
+    "female|letter D": {
+     "n": 7,
+     "misled": 0.571
+    },
+    "female|letter E": {
+     "n": 1,
+     "misled": 1.0
+    },
+    "female|letter F": {
+     "n": 1,
+     "misled": 1.0
+    },
+    "male|IDENTIFIABLE_BY_NEUTRALIZED_DESCRIPTOR": {
+     "n": 1,
+     "misled": 1.0
+    },
+    "male|IDENTIFIABLE_BY_STRING": {
+     "n": 108,
+     "misled": 0.093
+    },
+    "male|SUBJECT_NOT_IDENTIFIABLE_BY_RULE": {
+     "n": 78,
+     "misled": 0.051
+    },
+    "male|letter A": {
+     "n": 84,
+     "misled": 0.0
+    },
+    "male|letter B": {
+     "n": 63,
+     "misled": 0.127
+    },
+    "male|letter C": {
+     "n": 23,
+     "misled": 0.174
+    },
+    "male|letter D": {
+     "n": 10,
+     "misled": 0.3
+    },
+    "male|letter E": {
+     "n": 3,
+     "misled": 0.0
+    },
+    "male|letter F": {
+     "n": 4,
+     "misled": 0.0
+    }
+   }
+  }
+ }
+}

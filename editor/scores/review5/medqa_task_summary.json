@@ -1,0 +1,120 @@
+{
+ "prereg": "runs/dev/preregs/sacc_review5_prereg.md",
+ "families": {
+  "gpt4omini": {
+   "levels": {
+    "Detector": {
+     "accuracy": 0.7296,
+     "documents": 1249
+    },
+    "C1v3": {
+     "accuracy": 0.7274,
+     "documents": 1249
+    },
+    "SACC_v3": {
+     "accuracy": 0.73,
+     "documents": 1249
+    },
+    "B2": {
+     "accuracy": 0.7282,
+     "documents": 1249
+    },
+    "Source": {
+     "accuracy": 0.741,
+     "documents": 1249
+    },
+    "LLM_full": {
+     "accuracy": 0.7212,
+     "documents": 1189
+    },
+    "B6": {
+     "accuracy": 0.7288,
+     "documents": 1249
+    }
+   },
+   "contrasts": {
+    "Detector_minus_SACC": {
+     "documents": 1249,
+     "d": -0.0004,
+     "lo95": -0.0062,
+     "hi95": 0.0052
+    },
+    "Detector_minus_SACC_sexspecific": {
+     "documents": 288,
+     "d": 0.0087,
+     "lo95": -0.0026,
+     "hi95": 0.0208
+    },
+    "C1v3_minus_SACC": {
+     "documents": 1249,
+     "d": -0.0026,
+     "lo95": -0.0092,
+     "hi95": 0.0044
+    },
+    "C1v3_minus_SACC_sexspecific": {
+     "documents": 288,
+     "d": 0.0035,
+     "lo95": -0.0104,
+     "hi95": 0.0174
+    },
+    "B2_minus_SACC": {
+     "documents": 1249,
+     "d": -0.0018,
+     "lo95": -0.0086,
+     "hi95": 0.0054
+    },
+    "B2_minus_SACC_sexspecific": {
+     "documents": 288,
+     "d": 0.0061,
+     "lo95": -0.0078,
+     "hi95": 0.0208
+    },
+    "Source_minus_SACC": {
+     "documents": 1249,
+     "d": 0.011,
+     "lo95": 0.0028,
+     "hi95": 0.0192
+    },
+    "Source_minus_SACC_sexspecific": {
+     "documents": 288,
+     "d": 0.013,
+     "lo95": -0.0043,
+     "hi95": 0.0312
+    },
+    "LLM_full_minus_SACC": {
+     "documents": 1189,
+     "d": -0.0063,
+     "lo95": -0.013,
+     "hi95": 0.0
+    },
+    "LLM_full_minus_SACC_sexspecific": {
+     "documents": 270,
+     "d": -0.0028,
+     "lo95": -0.0157,
+     "hi95": 0.0102
+    },
+    "B6_minus_SACC": {
+     "documents": 1249,
+     "d": -0.0012,
+     "lo95": -0.0048,
+     "hi95": 0.0024
+    },
+    "B6_minus_SACC_sexspecific": {
+     "documents": 288,
+     "d": 0.0026,
+     "lo95": -0.0052,
+     "hi95": 0.0095
+    },
+    "Source_minus_Detector": {
+     "documents": 1249,
+     "d": 0.0114,
+     "lo95": 0.004,
+     "hi95": 0.0196
+    }
+   }
+  }
+ },
+ "Q-1": true,
+ "Q-2": true,
+ "Q-3": true
+}

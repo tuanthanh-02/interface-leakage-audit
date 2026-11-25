@@ -1,0 +1,91 @@
+{
+ "prereg": "runs/dev/preregs/sacc_review6_prereg.md Part T",
+ "levels": {
+  "Detector": 0.7296,
+  "C1v3": 0.7274,
+  "SACC_v3": 0.73,
+  "B2": 0.7282,
+  "Source": 0.741,
+  "LLM_full": 0.7212,
+  "B6": 0.7288,
+  "SourceSwapped": 0.7386,
+  "QuestionOnly": 0.4279
+ },
+ "question_only_minus_source": {
+  "documents": 1249,
+  "d": -0.3131,
+  "lo95": -0.3377,
+  "hi95": -0.2882
+ },
+ "sex_dependent_subset": {
+  "documents": 35,
+  "without_sex_term_pool": 961,
+  "levels": {
+   "Source": 0.4429,
+   "Detector": 0.45,
+   "C1v3": 0.4357,
+   "SACC_v3": 0.4,
+   "B2": 0.4143,
+   "B6": 0.4214,
+   "SourceSwapped": 0.4214
+  },
+  "SACC_minus_input": {
+   "documents": 35,
+   "d": -0.05,
+   "lo95": -0.1214,
+   "hi95": 0.0143
+  },
+  "SACC_minus_source": {
+   "documents": 35,
+   "d": -0.0429,
+   "lo95": -0.1571,
+   "hi95": 0.0643
+  },
+  "ladder_minus_SACC": {
+   "documents": 35,
+   "d": 0.0214,
+   "lo95": -0.0214,
+   "hi95": 0.0714
+  },
+  "vs_sacc": {
+   "Source_minus_SACC": {
+    "documents": 35,
+    "d": 0.0429,
+    "lo95": -0.0643,
+    "hi95": 0.1571
+   },
+   "Detector_minus_SACC": {
+    "documents": 35,
+    "d": 0.05,
+    "lo95": -0.0143,
+    "hi95": 0.1214
+   },
+   "B2_minus_SACC": {
+    "documents": 35,
+    "d": 0.0143,
+    "lo95": -0.0857,
+    "hi95": 0.1286
+   },
+   "B6_minus_SACC": {
+    "documents": 35,
+    "d": 0.0214,
+    "lo95": -0.0214,
+    "hi95": 0.0714
+   },
+   "C1v3_minus_SACC": {
+    "documents": 35,
+    "d": 0.0357,
+    "lo95": -0.0643,
+    "hi95": 0.1429
+   },
+   "LLM_full_minus_SACC": {
+    "documents": 32,
+    "d": -0.0391,
+    "lo95": -0.1172,
+    "hi95": 0.0391
+   }
+  }
+ },
+ "T-1": true,
+ "T-2": true
+}

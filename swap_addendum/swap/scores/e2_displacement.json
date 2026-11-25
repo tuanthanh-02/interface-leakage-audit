@@ -1,0 +1,1326 @@
+{
+ "note": "E2: belief displacement for the ordinary editors, in one table.",
+ "prereg": "preregs/eval_review2_e1_e4_prereg.md (E2)",
+ "boundary": "a MISLED share is not evidence of recoverability: an ordinary editor has no published inverse, so the rule-aware recovery test of sec:swap does not transfer to it",
+ "band": 0.05,
+ "gate": {
+  "medqa": {
+   "entries": 2093,
+   "mismatches": [],
+   "passes": true
+  },
+  "tab": {
+   "entries": 505,
+   "mismatches": [],
+   "passes": true
+  },
+  "synthpai": {
+   "entries": 351,
+   "mismatches": [],
+   "passes": true
+  }
+ },
+ "corpora": {
+  "medqa": {
+   "primary": {
+    "tags": [
+     "SEX",
+     "OCCUPATION"
+    ],
+    "entries": 2093,
+    "rows": {
+     "Anonymised input": {
+      "LEAK_balanced": 0.8706,
+      "ANON_balanced": 0.0097,
+      "MISLED_balanced": 0.1197,
+      "LEAK_n": 1785,
+      "ANON_n": 23,
+      "MISLED_n": 285,
+      "L_balanced": 0.8419,
+      "SIGNED_balanced": 0.7366,
+      "entries": 2093,
+      "own_sample": false,
+      "unmatched_reference": false
+     },
+     "Global mask": {
+      "LEAK_balanced": 0.7412,
+      "ANON_balanced": 0.0686,
+      "MISLED_balanced": 0.1902,
+      "LEAK_n": 1420,
+      "ANON_n": 172,
+      "MISLED_n": 501,
+      "L_balanced": 0.6527,
+      "SIGNED_balanced": 0.5063,
+      "entries": 2093,
+      "own_sample": false,
+      "unmatched_reference": false
+     },
+     "Global ladder": {
+      "LEAK_balanced": 0.7228,
+      "ANON_balanced": 0.1022,
+      "MISLED_balanced": 0.175,
+      "LEAK_n": 1376,
+      "ANON_n": 285,
+      "MISLED_n": 432,
+      "L_balanced": 0.6277,
+      "SIGNED_balanced": 0.5095,
+      "entries": 2093,
+      "own_sample": false,
+      "unmatched_reference": false
+     },
+     "INTACT": {
+      "LEAK_balanced": 0.8788,
+      "ANON_balanced": 0.0091,
+      "MISLED_balanced": 0.1121,
+      "LEAK_n": 1828,
+      "ANON_n": 13,
+      "MISLED_n": 252,
+      "L_balanced": 0.8533,
+      "SIGNED_balanced": 0.7563,
+      "entries": 2093,
+      "own_sample": false,
+      "unmatched_reference": false
+     },
+     "SACC-mask": {
+      "LEAK_balanced": 0.7493,
+      "ANON_balanced": 0.0632,
+      "MISLED_balanced": 0.1875,
+      "LEAK_n": 1436,
+      "ANON_n": 164,
+      "MISLED_n": 493,
+      "L_balanced": 0.6592,
+      "SIGNED_balanced": 0.5129,
+      "entries": 2093,
+      "own_sample": false,
+      "unmatched_reference": false
+     },
+     "SACC": {
+      "LEAK_balanced": 0.7277,
+      "ANON_balanced": 0.0993,
+      "MISLED_balanced": 0.1731,
+      "LEAK_n": 1377,
+      "ANON_n": 290,
+      "MISLED_n": 426,
+      "L_balanced": 0.6357,
+      "SIGNED_balanced": 0.5163,
+      "entries": 2093,
+      "own_sample": false,
+      "unmatched_reference": false
+     },
+     "Adaptive": {
+      "LEAK_balanced": 0.7037,
+      "ANON_balanced": 0.1028,
+      "MISLED_balanced": 0.1935,
+      "LEAK_n": 1391,
+      "ANON_n": 232,
+      "MISLED_n": 470,
+      "L_balanced": 0.5814,
+      "SIGNED_balanced": 0.4388,
+      "entries": 2093,
+      "own_sample": false,
+      "unmatched_reference": true
+     },
+     "LLM rewrite": {
+      "LEAK_balanced": 0.7212,
+      "ANON_balanced": 0.0899,
+      "MISLED_balanced": 0.1889,
+      "LEAK_n": 1335,
+      "ANON_n": 208,
+      "MISLED_n": 456,
+      "L_balanced": 0.6091,
+      "SIGNED_balanced": 0.4675,
+      "entries": 1999,
+      "own_sample": true,
+      "unmatched_reference": false
+     },
+     "SWAP (construct)": {
+      "LEAK_balanced": 0.5639,
+      "ANON_balanced": 0.0199,
+      "MISLED_balanced": 0.4162,
+      "LEAK_n": 900,
+      "ANON_n": 41,
+      "MISLED_n": 1215,
+      "L_balanced": 0.5365,
+      "SIGNED_balanced": 0.0765,
+      "entries": 2156,
+      "own_sample": true,
+      "unmatched_reference": false
+     }
+    }
+   },
+   "sex_only": {
+    "entries": 1473,
+    "rows": {
+     "Anonymised input": {
+      "LEAK_balanced": 0.8513,
+      "ANON_balanced": 0.0088,
+      "MISLED_balanced": 0.1399,
+      "LEAK_n": 1258,
+      "ANON_n": 13,
+      "MISLED_n": 202,
+      "L_balanced": 0.8438,
+      "SIGNED_balanced": 0.6934,
+      "entries": 1473,
+      "own_sample": false,
+      "unmatched_reference": false
+     },
+     "Global mask": {
+      "LEAK_balanced": 0.6171,
+      "ANON_balanced": 0.1059,
+      "MISLED_balanced": 0.277,
+      "LEAK_n": 913,
+      "ANON_n": 159,
+      "MISLED_n": 401,
+      "L_balanced": 0.4899,
+      "SIGNED_balanced": 0.2806,
+      "entries": 1473,
+      "own_sample": false,
+      "unmatched_reference": false
+     },
+     "Global ladder": {
+      "LEAK_balanced": 0.5763,
+      "ANON_balanced": 0.1791,
+      "MISLED_balanced": 0.2447,
+      "LEAK_n": 852,
+      "ANON_n": 267,
+      "MISLED_n": 354,
+      "L_balanced": 0.4298,
+      "SIGNED_balanced": 0.2544,
+      "entries": 1473,
+      "own_sample": false,
+      "unmatched_reference": false
+     },
+     "INTACT": {
+      "LEAK_balanced": 0.8735,
+      "ANON_balanced": 0.0041,
+      "MISLED_balanced": 0.1224,
+      "LEAK_n": 1290,
+      "ANON_n": 6,
+      "MISLED_n": 177,
+      "L_balanced": 0.8696,
+      "SIGNED_balanced": 0.7346,
+      "entries": 1473,
+      "own_sample": false,
+      "unmatched_reference": false
+     },
+     "SACC-mask": {
+      "LEAK_balanced": 0.6258,
+      "ANON_balanced": 0.1026,
+      "MISLED_balanced": 0.2716,
+      "LEAK_n": 926,
+      "ANON_n": 154,
+      "MISLED_n": 393,
+      "L_balanced": 0.495,
+      "SIGNED_balanced": 0.285,
+      "entries": 1473,
+      "own_sample": false,
+      "unmatched_reference": false
+     },
+     "SACC": {
+      "LEAK_balanced": 0.5768,
+      "ANON_balanced": 0.1825,
+      "MISLED_balanced": 0.2407,
+      "LEAK_n": 853,
+      "ANON_n": 272,
+      "MISLED_n": 348,
+      "L_balanced": 0.4355,
+      "SIGNED_balanced": 0.2564,
+      "entries": 1473,
+      "own_sample": false,
+      "unmatched_reference": false
+     },
+     "Adaptive": {
+      "LEAK_balanced": 0.6048,
+      "ANON_balanced": 0.1408,
+      "MISLED_balanced": 0.2544,
+      "LEAK_n": 906,
+      "ANON_n": 207,
+      "MISLED_n": 360,
+      "L_balanced": 0.4865,
+      "SIGNED_balanced": 0.2904,
+      "entries": 1473,
+      "own_sample": false,
+      "unmatched_reference": true
+     },
+     "LLM rewrite": {
+      "LEAK_balanced": 0.6112,
+      "ANON_balanced": 0.127,
+      "MISLED_balanced": 0.2618,
+      "LEAK_n": 842,
+      "ANON_n": 176,
+      "MISLED_n": 357,
+      "L_balanced": 0.4764,
+      "SIGNED_balanced": 0.2787,
+      "entries": 1375,
+      "own_sample": true,
+      "unmatched_reference": false
+     },
+     "SWAP (construct)": {
+      "LEAK_balanced": 0.2519,
+      "ANON_balanced": 0.0202,
+      "MISLED_balanced": 0.7279,
+      "LEAK_n": 357,
+      "ANON_n": 29,
+      "MISLED_n": 1087,
+      "L_balanced": 0.2408,
+      "SIGNED_balanced": -0.6077,
+      "entries": 1473,
+      "own_sample": true,
+      "unmatched_reference": false
+     }
+    }
+   },
+   "contrasts": {
+    "SACC_minus_SACCmask": {
+     "LEAK": {
+      "d": -0.0217,
+      "lo": -0.0356,
+      "hi": -0.0089,
+      "ci99": true
+     },
+     "ANON": {
+      "d": 0.0361,
+      "lo": 0.0172,
+      "hi": 0.0545,
+      "ci99": true
+     },
+     "MISLED": {
+      "d": -0.0144,
+      "lo": -0.0301,
+      "hi": 0.0043,
+      "ci99": false
+     }
+    },
+    "SACC_minus_SACCmask_sex": {
+     "LEAK": {
+      "d": -0.049,
+      "lo": -0.0719,
+      "hi": -0.0271,
+      "ci99": true
+     },
+     "ANON": {
+      "d": 0.0799,
+      "lo": 0.0558,
+      "hi": 0.1065,
+      "ci99": true
+     },
+     "MISLED": {
+      "d": -0.0309,
+      "lo": -0.052,
+      "hi": -0.0119,
+      "ci99": true
+     }
+    },
+    "SACC_minus_input": {
+     "LEAK": {
+      "d": -0.1429,
+      "lo": -0.1641,
+      "hi": -0.1248,
+      "ci99": true
+     },
+     "ANON": {
+      "d": 0.0896,
+      "lo": 0.0726,
+      "hi": 0.1067,
+      "ci99": true
+     },
+     "MISLED": {
+      "d": 0.0533,
+      "lo": 0.0371,
+      "hi": 0.0718,
+      "ci99": true
+     }
+    },
+    "SACC_minus_input_sex": {
+     "LEAK": {
+      "d": -0.2744,
+      "lo": -0.3056,
+      "hi": -0.2414,
+      "ci99": true
+     },
+     "ANON": {
+      "d": 0.1737,
+      "lo": 0.1456,
+      "hi": 0.2008,
+      "ci99": true
+     },
+     "MISLED": {
+      "d": 0.1007,
+      "lo": 0.0731,
+      "hi": 0.1278,
+      "ci99": true
+     }
+    },
+    "ladder_minus_mask": {
+     "LEAK": {
+      "d": -0.0185,
+      "lo": -0.0371,
+      "hi": -0.0014,
+      "ci99": true
+     },
+     "ANON": {
+      "d": 0.0336,
+      "lo": 0.0136,
+      "hi": 0.0543,
+      "ci99": true
+     },
+     "MISLED": {
+      "d": -0.0151,
+      "lo": -0.0311,
+      "hi": 0.0039,
+      "ci99": false
+     }
+    },
+    "ladder_minus_mask_sex": {
+     "LEAK": {
+      "d": -0.0408,
+      "lo": -0.0632,
+      "hi": -0.018,
+      "ci99": true
+     },
+     "ANON": {
+      "d": 0.0731,
+      "lo": 0.0487,
+      "hi": 0.098,
+      "ci99": true
+     },
+     "MISLED": {
+      "d": -0.0323,
+      "lo": -0.0529,
+      "hi": -0.0123,
+      "ci99": true
+     }
+    }
+   }
+  },
+  "tab": {
+   "primary": {
+    "tags": [
+     "SEX",
+     "OCCUPATION"
+    ],
+    "entries": 505,
+    "rows": {
+     "Anonymised input": {
+      "LEAK_balanced": 0.6423,
+      "ANON_balanced": 0.1334,
+      "MISLED_balanced": 0.2243,
+      "LEAK_n": 366,
+      "ANON_n": 60,
+      "MISLED_n": 79,
+      "L_balanced": 0.5564,
+      "SIGNED_balanced": 0.4237,
+      "entries": 505,
+      "own_sample": false,
+      "unmatched_reference": false
+     },
+     "Global mask": {
+      "LEAK_balanced": 0.6345,
+      "ANON_balanced": 0.1519,
+      "MISLED_balanced": 0.2136,
+      "LEAK_n": 364,
+      "ANON_n": 66,
+      "MISLED_n": 75,
+      "L_balanced": 0.4438,
+      "SIGNED_balanced": 0.345,
+      "entries": 505,
+      "own_sample": false,
+      "unmatched_reference": false
+     },
+     "Global ladder": {
+      "LEAK_balanced": 0.6027,
+      "ANON_balanced": 0.1995,
+      "MISLED_balanced": 0.1978,
+      "LEAK_n": 354,
+      "ANON_n": 77,
+      "MISLED_n": 74,
+      "L_balanced": 0.4085,
+      "SIGNED_balanced": 0.3244,
+      "entries": 505,
+      "own_sample": false,
+      "unmatched_reference": false
+     },
+     "INTACT": {
+      "LEAK_balanced": 0.6614,
+      "ANON_balanced": 0.1146,
+      "MISLED_balanced": 0.2241,
+      "LEAK_n": 372,
+      "ANON_n": 56,
+      "MISLED_n": 77,
+      "L_balanced": 0.5762,
+      "SIGNED_balanced": 0.437,
+      "entries": 505,
+      "own_sample": false,
+      "unmatched_reference": false
+     },
+     "SACC-mask": {
+      "LEAK_balanced": 0.6197,
+      "ANON_balanced": 0.1829,
+      "MISLED_balanced": 0.1974,
+      "LEAK_n": 345,
+      "ANON_n": 87,
+      "MISLED_n": 73,
+      "L_balanced": 0.4455,
+      "SIGNED_balanced": 0.3531,
+      "entries": 505,
+      "own_sample": false,
+      "unmatched_reference": false
+     },
+     "SACC": {
+      "LEAK_balanced": 0.5989,
+      "ANON_balanced": 0.2084,
+      "MISLED_balanced": 0.1927,
+      "LEAK_n": 343,
+      "ANON_n": 90,
+      "MISLED_n": 72,
+      "L_balanced": 0.4232,
+      "SIGNED_balanced": 0.3376,
+      "entries": 505,
+      "own_sample": false,
+      "unmatched_reference": false
+     },
+     "Adaptive": {
+      "LEAK_balanced": 0.6767,
+      "ANON_balanced": 0.1079,
+      "MISLED_balanced": 0.2154,
+      "LEAK_n": 378,
+      "ANON_n": 52,
+      "MISLED_n": 75,
+      "L_balanced": 0.6176,
+      "SIGNED_balanced": 0.4832,
+      "entries": 505,
+      "own_sample": false,
+      "unmatched_reference": true
+     },
+     "LLM rewrite": {
+      "LEAK_balanced": 0.6197,
+      "ANON_balanced": 0.197,
+      "MISLED_balanced": 0.1833,
+      "LEAK_n": 183,
+      "ANON_n": 66,
+      "MISLED_n": 49,
+      "L_balanced": 0.4362,
+      "SIGNED_balanced": 0.3491,
+      "entries": 298,
+      "own_sample": true,
+      "unmatched_reference": false
+     },
+     "SWAP (construct)": {
+      "LEAK_balanced": 0.5338,
+      "ANON_balanced": 0.1406,
+      "MISLED_balanced": 0.3256,
+      "LEAK_n": 248,
+      "ANON_n": 63,
+      "MISLED_n": 194,
+      "L_balanced": 0.4442,
+      "SIGNED_balanced": 0.2381,
+      "entries": 505,
+      "own_sample": true,
+      "unmatched_reference": false
+     }
+    }
+   },
+   "sex_only": {
+    "entries": 244,
+    "rows": {
+     "Anonymised input": {
+      "LEAK_balanced": 0.5895,
+      "ANON_balanced": 0.037,
+      "MISLED_balanced": 0.3734,
+      "LEAK_n": 184,
+      "ANON_n": 7,
+      "MISLED_n": 53,
+      "L_balanced": 0.5532,
+      "SIGNED_balanced": 0.3165,
+      "entries": 244,
+      "own_sample": false,
+      "unmatched_reference": false
+     },
+     "Global mask": {
+      "LEAK_balanced": 0.5895,
+      "ANON_balanced": 0.074,
+      "MISLED_balanced": 0.3364,
+      "LEAK_n": 184,
+      "ANON_n": 14,
+      "MISLED_n": 46,
+      "L_balanced": 0.3781,
+      "SIGNED_balanced": 0.2153,
+      "entries": 244,
+      "own_sample": false,
+      "unmatched_reference": false
+     },
+     "Global ladder": {
+      "LEAK_balanced": 0.546,
+      "ANON_balanced": 0.1366,
+      "MISLED_balanced": 0.3174,
+      "LEAK_n": 170,
+      "ANON_n": 26,
+      "MISLED_n": 48,
+      "L_balanced": 0.3055,
+      "SIGNED_balanced": 0.175,
+      "entries": 244,
+      "own_sample": false,
+      "unmatched_reference": false
+     },
+     "INTACT": {
+      "LEAK_balanced": 0.5976,
+      "ANON_balanced": 0.0202,
+      "MISLED_balanced": 0.3822,
+      "LEAK_n": 187,
+      "ANON_n": 3,
+      "MISLED_n": 54,
+      "L_balanced": 0.5745,
+      "SIGNED_balanced": 0.3242,
+      "entries": 244,
+      "own_sample": false,
+      "unmatched_reference": false
+     },
+     "SACC-mask": {
+      "LEAK_balanced": 0.5723,
+      "ANON_balanced": 0.1122,
+      "MISLED_balanced": 0.3155,
+      "LEAK_n": 173,
+      "ANON_n": 26,
+      "MISLED_n": 45,
+      "L_balanced": 0.3584,
+      "SIGNED_balanced": 0.2076,
+      "entries": 244,
+      "own_sample": false,
+      "unmatched_reference": false
+     },
+     "SACC": {
+      "LEAK_balanced": 0.5224,
+      "ANON_balanced": 0.1736,
+      "MISLED_balanced": 0.304,
+      "LEAK_n": 168,
+      "ANON_n": 33,
+      "MISLED_n": 43,
+      "L_balanced": 0.3141,
+      "SIGNED_balanced": 0.1766,
+      "entries": 244,
+      "own_sample": false,
+      "unmatched_reference": false
+     },
+     "Adaptive": {
+      "LEAK_balanced": 0.6159,
+      "ANON_balanced": 0.0141,
+      "MISLED_balanced": 0.37,
+      "LEAK_n": 187,
+      "ANON_n": 3,
+      "MISLED_n": 54,
+      "L_balanced": 0.6079,
+      "SIGNED_balanced": 0.3629,
+      "entries": 244,
+      "own_sample": false,
+      "unmatched_reference": true
+     },
+     "LLM rewrite": {
+      "LEAK_balanced": 0.6359,
+      "ANON_balanced": 0.0989,
+      "MISLED_balanced": 0.2652,
+      "LEAK_n": 97,
+      "ANON_n": 15,
+      "MISLED_n": 30,
+      "L_balanced": 0.4266,
+      "SIGNED_balanced": 0.3027,
+      "entries": 142,
+      "own_sample": true,
+      "unmatched_reference": false
+     },
+     "SWAP (construct)": {
+      "LEAK_balanced": 0.3831,
+      "ANON_balanced": 0.045,
+      "MISLED_balanced": 0.5719,
+      "LEAK_n": 68,
+      "ANON_n": 10,
+      "MISLED_n": 166,
+      "L_balanced": 0.3601,
+      "SIGNED_balanced": -0.0192,
+      "entries": 244,
+      "own_sample": true,
+      "unmatched_reference": false
+     }
+    }
+   },
+   "contrasts": {
+    "SACC_minus_SACCmask": {
+     "LEAK": {
+      "d": -0.0208,
+      "lo": -0.0671,
+      "hi": 0.0166,
+      "ci99": false
+     },
+     "ANON": {
+      "d": 0.0255,
+      "lo": -0.0141,
+      "hi": 0.0717,
+      "ci99": false
+     },
+     "MISLED": {
+      "d": -0.0047,
+      "lo": -0.0333,
+      "hi": 0.0231,
+      "ci99": false
+     }
+    },
+    "SACC_minus_SACCmask_sex": {
+     "LEAK": {
+      "d": -0.05,
+      "lo": -0.1388,
+      "hi": 0.0204,
+      "ci99": false
+     },
+     "ANON": {
+      "d": 0.0614,
+      "lo": -0.0159,
+      "hi": 0.15,
+      "ci99": false
+     },
+     "MISLED": {
+      "d": -0.0114,
+      "lo": -0.0659,
+      "hi": 0.0401,
+      "ci99": false
+     }
+    },
+    "SACC_minus_input": {
+     "LEAK": {
+      "d": -0.0434,
+      "lo": -0.0894,
+      "hi": 0.0031,
+      "ci99": false
+     },
+     "ANON": {
+      "d": 0.075,
+      "lo": 0.0331,
+      "hi": 0.1222,
+      "ci99": true
+     },
+     "MISLED": {
+      "d": -0.0316,
+      "lo": -0.0788,
+      "hi": 0.0157,
+      "ci99": false
+     }
+    },
+    "SACC_minus_input_sex": {
+     "LEAK": {
+      "d": -0.0672,
+      "lo": -0.1624,
+      "hi": 0.0222,
+      "ci99": false
+     },
+     "ANON": {
+      "d": 0.1366,
+      "lo": 0.052,
+      "hi": 0.2436,
+      "ci99": true
+     },
+     "MISLED": {
+      "d": -0.0694,
+      "lo": -0.1658,
+      "hi": 0.021,
+      "ci99": false
+     }
+    },
+    "ladder_minus_mask": {
+     "LEAK": {
+      "d": -0.0318,
+      "lo": -0.0824,
+      "hi": 0.0158,
+      "ci99": false
+     },
+     "ANON": {
+      "d": 0.0475,
+      "lo": -0.0017,
+      "hi": 0.1019,
+      "ci99": false
+     },
+     "MISLED": {
+      "d": -0.0158,
+      "lo": -0.0501,
+      "hi": 0.0122,
+      "ci99": false
+     }
+    },
+    "ladder_minus_mask_sex": {
+     "LEAK": {
+      "d": -0.0435,
+      "lo": -0.1318,
+      "hi": 0.035,
+      "ci99": false
+     },
+     "ANON": {
+      "d": 0.0626,
+      "lo": -0.0192,
+      "hi": 0.1595,
+      "ci99": false
+     },
+     "MISLED": {
+      "d": -0.019,
+      "lo": -0.0781,
+      "hi": 0.0256,
+      "ci99": false
+     }
+    }
+   },
+   "subject_position": {
+    "first_named": {
+     "entries": 98,
+     "rows": {
+      "Anonymised input": {
+       "LEAK_balanced": 0.8869,
+       "ANON_balanced": 0.0417,
+       "MISLED_balanced": 0.0714,
+       "LEAK_n": 94,
+       "ANON_n": 2,
+       "MISLED_n": 2,
+       "L_balanced": 0.85,
+       "SIGNED_balanced": 0.8378,
+       "entries": 98
+      },
+      "Global mask": {
+       "LEAK_balanced": 0.6369,
+       "ANON_balanced": 0.125,
+       "MISLED_balanced": 0.2381,
+       "LEAK_n": 82,
+       "ANON_n": 6,
+       "MISLED_n": 10,
+       "L_balanced": 0.4292,
+       "SIGNED_balanced": 0.3575,
+       "entries": 98
+      },
+      "Global ladder": {
+       "LEAK_balanced": 0.6429,
+       "ANON_balanced": 0.1012,
+       "MISLED_balanced": 0.256,
+       "LEAK_n": 78,
+       "ANON_n": 7,
+       "MISLED_n": 13,
+       "L_balanced": 0.3551,
+       "SIGNED_balanced": 0.2924,
+       "entries": 98
+      },
+      "INTACT": {
+       "LEAK_balanced": 0.8929,
+       "ANON_balanced": 0.0357,
+       "MISLED_balanced": 0.0714,
+       "LEAK_n": 95,
+       "ANON_n": 1,
+       "MISLED_n": 2,
+       "L_balanced": 0.8749,
+       "SIGNED_balanced": 0.8417,
+       "entries": 98
+      },
+      "SACC-mask": {
+       "LEAK_balanced": 0.6429,
+       "ANON_balanced": 0.1548,
+       "MISLED_balanced": 0.2024,
+       "LEAK_n": 78,
+       "ANON_n": 11,
+       "MISLED_n": 9,
+       "L_balanced": 0.402,
+       "SIGNED_balanced": 0.3492,
+       "entries": 98
+      },
+      "SACC": {
+       "LEAK_balanced": 0.6012,
+       "ANON_balanced": 0.1905,
+       "MISLED_balanced": 0.2083,
+       "LEAK_n": 76,
+       "ANON_n": 12,
+       "MISLED_n": 10,
+       "L_balanced": 0.37,
+       "SIGNED_balanced": 0.3214,
+       "entries": 98
+      },
+      "Adaptive": {
+       "LEAK_balanced": 1.0,
+       "ANON_balanced": 0.0,
+       "MISLED_balanced": 0.0,
+       "LEAK_n": 98,
+       "ANON_n": 0,
+       "MISLED_n": 0,
+       "L_balanced": 0.9828,
+       "SIGNED_balanced": 0.9828,
+       "entries": 98
+      },
+      "LLM rewrite": {
+       "LEAK_balanced": 0.6058,
+       "ANON_balanced": 0.1827,
+       "MISLED_balanced": 0.2115,
+       "LEAK_n": 41,
+       "ANON_n": 8,
+       "MISLED_n": 11,
+       "L_balanced": 0.371,
+       "SIGNED_balanced": 0.2913,
+       "entries": 60
+      },
+      "SWAP (construct)": {
+       "LEAK_balanced": 0.125,
+       "ANON_balanced": 0.0476,
+       "MISLED_balanced": 0.8274,
+       "LEAK_n": 11,
+       "ANON_n": 3,
+       "MISLED_n": 84,
+       "L_balanced": 0.104,
+       "SIGNED_balanced": -0.4546,
+       "entries": 98
+      }
+     }
+    },
+    "other_subjects": {
+     "entries": 146,
+     "rows": {
+      "Anonymised input": {
+       "LEAK_balanced": 0.4708,
+       "ANON_balanced": 0.0378,
+       "MISLED_balanced": 0.4914,
+       "LEAK_n": 90,
+       "ANON_n": 5,
+       "MISLED_n": 51,
+       "L_balanced": 0.4349,
+       "SIGNED_balanced": 0.1088,
+       "entries": 146
+      },
+      "Global mask": {
+       "LEAK_balanced": 0.5697,
+       "ANON_balanced": 0.0592,
+       "MISLED_balanced": 0.3712,
+       "LEAK_n": 102,
+       "ANON_n": 8,
+       "MISLED_n": 36,
+       "L_balanced": 0.3589,
+       "SIGNED_balanced": 0.1641,
+       "entries": 146
+      },
+      "Global ladder": {
+       "LEAK_balanced": 0.5076,
+       "ANON_balanced": 0.1532,
+       "MISLED_balanced": 0.3392,
+       "LEAK_n": 92,
+       "ANON_n": 19,
+       "MISLED_n": 35,
+       "L_balanced": 0.2894,
+       "SIGNED_balanced": 0.1351,
+       "entries": 146
+      },
+      "INTACT": {
+       "LEAK_balanced": 0.4805,
+       "ANON_balanced": 0.0165,
+       "MISLED_balanced": 0.503,
+       "LEAK_n": 92,
+       "ANON_n": 2,
+       "MISLED_n": 52,
+       "L_balanced": 0.4529,
+       "SIGNED_balanced": 0.1156,
+       "entries": 146
+      },
+      "SACC-mask": {
+       "LEAK_balanced": 0.5424,
+       "ANON_balanced": 0.0999,
+       "MISLED_balanced": 0.3576,
+       "LEAK_n": 95,
+       "ANON_n": 15,
+       "MISLED_n": 36,
+       "L_balanced": 0.3406,
+       "SIGNED_balanced": 0.1555,
+       "entries": 146
+      },
+      "SACC": {
+       "LEAK_balanced": 0.494,
+       "ANON_balanced": 0.1697,
+       "MISLED_balanced": 0.3363,
+       "LEAK_n": 92,
+       "ANON_n": 21,
+       "MISLED_n": 33,
+       "L_balanced": 0.297,
+       "SIGNED_balanced": 0.1288,
+       "entries": 146
+      },
+      "Adaptive": {
+       "LEAK_balanced": 0.4659,
+       "ANON_balanced": 0.0213,
+       "MISLED_balanced": 0.5128,
+       "LEAK_n": 89,
+       "ANON_n": 3,
+       "MISLED_n": 54,
+       "L_balanced": 0.4613,
+       "SIGNED_balanced": 0.1195,
+       "entries": 146
+      },
+      "LLM rewrite": {
+       "LEAK_balanced": 0.6505,
+       "ANON_balanced": 0.0731,
+       "MISLED_balanced": 0.2764,
+       "LEAK_n": 56,
+       "ANON_n": 7,
+       "MISLED_n": 19,
+       "L_balanced": 0.4505,
+       "SIGNED_balanced": 0.3187,
+       "entries": 82
+      },
+      "SWAP (construct)": {
+       "LEAK_balanced": 0.4867,
+       "ANON_balanced": 0.0475,
+       "MISLED_balanced": 0.4658,
+       "LEAK_n": 57,
+       "ANON_n": 7,
+       "MISLED_n": 82,
+       "L_balanced": 0.4634,
+       "SIGNED_balanced": 0.1599,
+       "entries": 146
+      }
+     }
+    }
+   }
+  },
+  "synthpai": {
+   "primary": {
+    "tags": [
+     "SEX",
+     "OCCUPATION",
+     "RELATIONSHIP"
+    ],
+    "entries": 351,
+    "rows": {
+     "Anonymised input": {
+      "LEAK_balanced": 0.8854,
+      "ANON_balanced": 0.0766,
+      "MISLED_balanced": 0.038,
+      "LEAK_n": 325,
+      "ANON_n": 19,
+      "MISLED_n": 7,
+      "L_balanced": 0.8164,
+      "SIGNED_balanced": 0.8073,
+      "entries": 351,
+      "own_sample": false,
+      "unmatched_reference": false
+     },
+     "Global mask": {
+      "LEAK_balanced": 0.7826,
+      "ANON_balanced": 0.1653,
+      "MISLED_balanced": 0.0521,
+      "LEAK_n": 309,
+      "ANON_n": 32,
+      "MISLED_n": 10,
+      "L_balanced": 0.699,
+      "SIGNED_balanced": 0.6848,
+      "entries": 351,
+      "own_sample": false,
+      "unmatched_reference": false
+     },
+     "Global ladder": {
+      "LEAK_balanced": 0.8351,
+      "ANON_balanced": 0.1158,
+      "MISLED_balanced": 0.0491,
+      "LEAK_n": 316,
+      "ANON_n": 27,
+      "MISLED_n": 8,
+      "L_balanced": 0.7354,
+      "SIGNED_balanced": 0.722,
+      "entries": 351,
+      "own_sample": false,
+      "unmatched_reference": false
+     },
+     "INTACT": {
+      "LEAK_balanced": 0.8848,
+      "ANON_balanced": 0.0841,
+      "MISLED_balanced": 0.0311,
+      "LEAK_n": 325,
+      "ANON_n": 19,
+      "MISLED_n": 7,
+      "L_balanced": 0.8129,
+      "SIGNED_balanced": 0.8051,
+      "entries": 351,
+      "own_sample": false,
+      "unmatched_reference": false
+     },
+     "SACC-mask": {
+      "LEAK_balanced": 0.7849,
+      "ANON_balanced": 0.1653,
+      "MISLED_balanced": 0.0497,
+      "LEAK_n": 310,
+      "ANON_n": 32,
+      "MISLED_n": 9,
+      "L_balanced": 0.7049,
+      "SIGNED_balanced": 0.6913,
+      "entries": 351,
+      "own_sample": false,
+      "unmatched_reference": false
+     },
+     "SACC": {
+      "LEAK_balanced": 0.7849,
+      "ANON_balanced": 0.1653,
+      "MISLED_balanced": 0.0497,
+      "LEAK_n": 310,
+      "ANON_n": 32,
+      "MISLED_n": 9,
+      "L_balanced": 0.7049,
+      "SIGNED_balanced": 0.6913,
+      "entries": 351,
+      "own_sample": false,
+      "unmatched_reference": false
+     },
+     "Adaptive": {
+      "LEAK_balanced": 0.8639,
+      "ANON_balanced": 0.095,
+      "MISLED_balanced": 0.0412,
+      "LEAK_n": 322,
+      "ANON_n": 23,
+      "MISLED_n": 6,
+      "L_balanced": 0.7902,
+      "SIGNED_balanced": 0.7799,
+      "entries": 351,
+      "own_sample": false,
+      "unmatched_reference": true
+     },
+     "LLM rewrite": {
+      "LEAK_balanced": 0.7481,
+      "ANON_balanced": 0.1783,
+      "MISLED_balanced": 0.0735,
+      "LEAK_n": 223,
+      "ANON_n": 27,
+      "MISLED_n": 10,
+      "L_balanced": 0.6592,
+      "SIGNED_balanced": 0.6353,
+      "entries": 260,
+      "own_sample": true,
+      "unmatched_reference": false
+     }
+    }
+   },
+   "sex_only": {
+    "entries": 54,
+    "rows": {
+     "Anonymised input": {
+      "LEAK_balanced": 0.9077,
+      "ANON_balanced": 0.0128,
+      "MISLED_balanced": 0.0795,
+      "LEAK_n": 50,
+      "ANON_n": 1,
+      "MISLED_n": 3,
+      "L_balanced": 0.8504,
+      "SIGNED_balanced": 0.8309,
+      "entries": 54,
+      "own_sample": false,
+      "unmatched_reference": false
+     },
+     "Global mask": {
+      "LEAK_balanced": 0.8744,
+      "ANON_balanced": 0.0128,
+      "MISLED_balanced": 0.1128,
+      "LEAK_n": 49,
+      "ANON_n": 1,
+      "MISLED_n": 4,
+      "L_balanced": 0.7897,
+      "SIGNED_balanced": 0.7602,
+      "entries": 54,
+      "own_sample": false,
+      "unmatched_reference": false
+     },
+     "Global ladder": {
+      "LEAK_balanced": 0.8744,
+      "ANON_balanced": 0.0128,
+      "MISLED_balanced": 0.1128,
+      "LEAK_n": 49,
+      "ANON_n": 1,
+      "MISLED_n": 4,
+      "L_balanced": 0.7833,
+      "SIGNED_balanced": 0.7513,
+      "entries": 54,
+      "own_sample": false,
+      "unmatched_reference": false
+     },
+     "INTACT": {
+      "LEAK_balanced": 0.8949,
+      "ANON_balanced": 0.0462,
+      "MISLED_balanced": 0.059,
+      "LEAK_n": 49,
+      "ANON_n": 2,
+      "MISLED_n": 3,
+      "L_balanced": 0.8401,
+      "SIGNED_balanced": 0.8242,
+      "entries": 54,
+      "own_sample": false,
+      "unmatched_reference": false
+     },
+     "SACC-mask": {
+      "LEAK_balanced": 0.8744,
+      "ANON_balanced": 0.0128,
+      "MISLED_balanced": 0.1128,
+      "LEAK_n": 49,
+      "ANON_n": 1,
+      "MISLED_n": 4,
+      "L_balanced": 0.8003,
+      "SIGNED_balanced": 0.7684,
+      "entries": 54,
+      "own_sample": false,
+      "unmatched_reference": false
+     },
+     "SACC": {
+      "LEAK_balanced": 0.8744,
+      "ANON_balanced": 0.0128,
+      "MISLED_balanced": 0.1128,
+      "LEAK_n": 49,
+      "ANON_n": 1,
+      "MISLED_n": 4,
+      "L_balanced": 0.8003,
+      "SIGNED_balanced": 0.7684,
+      "entries": 54,
+      "own_sample": false,
+      "unmatched_reference": false
+     },
+     "Adaptive": {
+      "LEAK_balanced": 0.9205,
+      "ANON_balanced": 0.0,
+      "MISLED_balanced": 0.0795,
+      "LEAK_n": 51,
+      "ANON_n": 0,
+      "MISLED_n": 3,
+      "L_balanced": 0.868,
+      "SIGNED_balanced": 0.847,
+      "entries": 54,
+      "own_sample": false,
+      "unmatched_reference": true
+     },
+     "LLM rewrite": {
+      "LEAK_balanced": 0.681,
+      "ANON_balanced": 0.2017,
+      "MISLED_balanced": 0.1172,
+      "LEAK_n": 30,
+      "ANON_n": 6,
+      "MISLED_n": 3,
+      "L_balanced": 0.5204,
+      "SIGNED_balanced": 0.4757,
+      "entries": 39,
+      "own_sample": true,
+      "unmatched_reference": false
+     }
+    }
+   },
+   "contrasts": {
+    "SACC_minus_SACCmask": {
+     "LEAK": {
+      "d": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "ci99": false
+     },
+     "ANON": {
+      "d": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "ci99": false
+     },
+     "MISLED": {
+      "d": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "ci99": false
+     }
+    },
+    "SACC_minus_SACCmask_sex": {
+     "LEAK": {
+      "d": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "ci99": false
+     },
+     "ANON": {
+      "d": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "ci99": false
+     },
+     "MISLED": {
+      "d": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "ci99": false
+     }
+    },
+    "SACC_minus_input": {
+     "LEAK": {
+      "d": -0.1005,
+      "lo": -0.1609,
+      "hi": -0.0431,
+      "ci99": true
+     },
+     "ANON": {
+      "d": 0.0887,
+      "lo": 0.0358,
+      "hi": 0.1434,
+      "ci99": true
+     },
+     "MISLED": {
+      "d": 0.0118,
+      "lo": 0.0,
+      "hi": 0.0483,
+      "ci99": false
+     }
+    },
+    "SACC_minus_input_sex": {
+     "LEAK": {
+      "d": -0.0333,
+      "lo": -0.1429,
+      "hi": 0.0,
+      "ci99": false
+     },
+     "ANON": {
+      "d": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "ci99": false
+     },
+     "MISLED": {
+      "d": 0.0333,
+      "lo": 0.0,
+      "hi": 0.1429,
+      "ci99": false
+     }
+    },
+    "ladder_minus_mask": {
+     "LEAK": {
+      "d": 0.0525,
+      "lo": -0.0078,
+      "hi": 0.1118,
+      "ci99": false
+     },
+     "ANON": {
+      "d": -0.0495,
+      "lo": -0.1092,
+      "hi": 0.0104,
+      "ci99": false
+     },
+     "MISLED": {
+      "d": -0.003,
+      "lo": -0.0104,
+      "hi": 0.0,
+      "ci99": false
+     }
+    },
+    "ladder_minus_mask_sex": {
+     "LEAK": {
+      "d": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "ci99": false
+     },
+     "ANON": {
+      "d": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "ci99": false
+     },
+     "MISLED": {
+      "d": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "ci99": false
+     }
+    }
+   }
+  }
+ }
+}

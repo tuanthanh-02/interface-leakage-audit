@@ -1,0 +1,9 @@
+{
+ "version": "sexclin_v0",
+ "written": "2026-09-18, before any S0 census output",
+ "flags": "case-insensitive; each pattern wrapped as \\b(?:...)\\b",
+ "STRONG_FEMALE": ["pregnan\\w*", "gestation\\w*", "gravida", "primigravida", "multigravida", "nulligravida", "G\\d+\\s?P\\d+\\w*", "postpartum", "post-partum", "trimesters?", "prenatal", "antenatal", "uter(?:us|ine|i)", "ovar(?:y|ies|ian)", "vagin\\w*", "vulv\\w*", "endometri\\w*", "menstru\\w*", "menarche", "menopaus\\w*", "perimenopaus\\w*", "postmenopaus\\w*", "last menstrual period", "LMP", "lactat\\w*", "breastfeed\\w*", "breast-feed\\w*", "placent\\w*", "fallopian", "salping\\w*", "hysterectom\\w*", "mammogra\\w*", "Pap smears?", "Pap test", "obstetric\\w*", "gyn(?:a)?ecolog\\w*", "pre-?eclampsia", "eclampsia", "amenorrh\\w*", "dysmenorrh\\w*", "menorrhag\\w*", "miscarriages?", "cesarean", "caesarean", "C-section", "polycystic ovar\\w*", "cervix", "oophorectom\\w*", "vaginosis", "labia\\w*", "clitor\\w*", "ectopic pregnancy", "hydatidiform"],
+ "STRONG_MALE": ["prostat\\w*", "testic\\w*", "testis", "testes", "scrot\\w*", "penis", "penile", "erectile", "epididym\\w*", "vas deferens", "semen", "sperm\\w*", "orchi\\w*", "cryptorchidism", "hypospadias", "circumcis\\w*", "gynecomastia", "gynaecomastia", "varicocele", "hydrocele"],
+ "WEAK": ["breasts?", "oral contraceptives?", "contracepti\\w*", "IUD", "intrauterine device"],
+ "excluded_by_design": ["cervical (spine/lymph ambiguity)"]
+}

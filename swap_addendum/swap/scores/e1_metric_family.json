@@ -1,0 +1,1487 @@
+{
+ "note": "E1: does the misdirection defect reproduce under metrics this paper did not design?",
+ "prereg": "preregs/eval_review2_e1_e4_prereg.md (E1)",
+ "metric_directions": {
+  "L": {
+   "uses_prior": true,
+   "more_private": "lower"
+  },
+  "SIGNED": {
+   "uses_prior": true,
+   "more_private": "lower"
+  },
+  "LEAK": {
+   "uses_prior": true,
+   "more_private": "lower"
+  },
+  "DISC": {
+   "uses_prior": true,
+   "more_private": "lower"
+  },
+  "ACC": {
+   "uses_prior": false,
+   "more_private": "lower"
+  },
+  "BRIER": {
+   "uses_prior": false,
+   "more_private": "higher"
+  },
+  "LOGLOSS": {
+   "uses_prior": false,
+   "more_private": "higher"
+  }
+ },
+ "gate": {
+  "medqa": {
+   "entries": 2093,
+   "max_abs_dev": 0.0,
+   "worst": null,
+   "levels": {
+    "SWAP": [
+     0.536,
+     0.564,
+     0.979
+    ],
+    "Adaptive": [
+     0.581,
+     0.704,
+     0.897
+    ],
+    "B6": [
+     0.628,
+     0.723,
+     0.898
+    ],
+    "SACC_Nstar": [
+     0.636,
+     0.728,
+     0.901
+    ],
+    "B2": [
+     0.653,
+     0.741,
+     0.931
+    ],
+    "C1": [
+     0.659,
+     0.749,
+     0.937
+    ],
+    "Detector": [
+     0.842,
+     0.871,
+     0.99
+    ],
+    "INTACT": [
+     0.853,
+     0.879,
+     0.991
+    ]
+   },
+   "passes": true
+  },
+  "tab": {
+   "entries": 505,
+   "max_abs_dev": 0.001,
+   "worst": "B6/DISC: 0.801 vs 0.8",
+   "levels": {
+    "SWAP": [
+     0.444,
+     0.534,
+     0.859
+    ],
+    "Adaptive": [
+     0.618,
+     0.677,
+     0.892
+    ],
+    "B6": [
+     0.408,
+     0.603,
+     0.801
+    ],
+    "SACC_Nstar": [
+     0.423,
+     0.599,
+     0.792
+    ],
+    "B2": [
+     0.444,
+     0.634,
+     0.848
+    ],
+    "C1": [
+     0.446,
+     0.62,
+     0.817
+    ],
+    "Detector": [
+     0.556,
+     0.642,
+     0.867
+    ],
+    "INTACT": [
+     0.576,
+     0.661,
+     0.885
+    ]
+   },
+   "passes": true
+  }
+ },
+ "corpora": {
+  "medqa": {
+   "entries": 1473,
+   "male": 788,
+   "female": 685,
+   "basis": "seeded orders, SEX only, stratum-balanced; the tab:x1 cohort",
+   "levels": {
+    "SWAP": {
+     "L": 0.2408,
+     "SIGNED": -0.6077,
+     "LEAK": 0.2519,
+     "DISC": 0.9798,
+     "ACC": 0.2581,
+     "BRIER": 0.7233,
+     "LOGLOSS": 14.5069,
+     "AUC": 0.18,
+     "DIST_FROM_CHANCE": 0.32,
+     "share_p_below_.01": 0.688
+    },
+    "Adaptive": {
+     "L": 0.4865,
+     "SIGNED": 0.2904,
+     "LEAK": 0.6048,
+     "DISC": 0.8592,
+     "ACC": 0.6668,
+     "BRIER": 0.2425,
+     "LOGLOSS": 1.605,
+     "AUC": 0.734,
+     "DIST_FROM_CHANCE": 0.234,
+     "share_p_below_.01": 0.06
+    },
+    "B6": {
+     "L": 0.4298,
+     "SIGNED": 0.2544,
+     "LEAK": 0.5763,
+     "DISC": 0.8209,
+     "ACC": 0.6531,
+     "BRIER": 0.2408,
+     "LOGLOSS": 1.2351,
+     "AUC": 0.718,
+     "DIST_FROM_CHANCE": 0.218,
+     "share_p_below_.01": 0.048
+    },
+    "SACC_Nstar": {
+     "L": 0.4355,
+     "SIGNED": 0.2564,
+     "LEAK": 0.5768,
+     "DISC": 0.8175,
+     "ACC": 0.6524,
+     "BRIER": 0.2415,
+     "LOGLOSS": 1.2686,
+     "AUC": 0.719,
+     "DIST_FROM_CHANCE": 0.219,
+     "share_p_below_.01": 0.048
+    },
+    "B2": {
+     "L": 0.4899,
+     "SIGNED": 0.2806,
+     "LEAK": 0.6171,
+     "DISC": 0.8941,
+     "ACC": 0.6703,
+     "BRIER": 0.2427,
+     "LOGLOSS": 1.294,
+     "AUC": 0.735,
+     "DIST_FROM_CHANCE": 0.235,
+     "share_p_below_.01": 0.054
+    },
+    "C1": {
+     "L": 0.495,
+     "SIGNED": 0.285,
+     "LEAK": 0.6258,
+     "DISC": 0.8974,
+     "ACC": 0.6758,
+     "BRIER": 0.2418,
+     "LOGLOSS": 1.3345,
+     "AUC": 0.737,
+     "DIST_FROM_CHANCE": 0.237,
+     "share_p_below_.01": 0.058
+    },
+    "Detector": {
+     "L": 0.8438,
+     "SIGNED": 0.6934,
+     "LEAK": 0.8513,
+     "DISC": 0.9912,
+     "ACC": 0.8567,
+     "BRIER": 0.1367,
+     "LOGLOSS": 2.5192,
+     "AUC": 0.888,
+     "DIST_FROM_CHANCE": 0.388,
+     "share_p_below_.01": 0.123
+    },
+    "INTACT": {
+     "L": 0.8696,
+     "SIGNED": 0.7346,
+     "LEAK": 0.8735,
+     "DISC": 0.9959,
+     "ACC": 0.8768,
+     "BRIER": 0.1197,
+     "LOGLOSS": 2.2767,
+     "AUC": 0.954,
+     "DIST_FROM_CHANCE": 0.454,
+     "share_p_below_.01": 0.11
+    }
+   },
+   "vs_SACCmask": {
+    "SWAP": {
+     "L": {
+      "d": -0.2541,
+      "lo": -0.2914,
+      "hi": -0.2174,
+      "ci99": true
+     },
+     "SIGNED": {
+      "d": -0.8927,
+      "lo": -0.9739,
+      "hi": -0.816,
+      "ci99": true
+     },
+     "LEAK": {
+      "d": -0.3739,
+      "lo": -0.413,
+      "hi": -0.3353,
+      "ci99": true
+     },
+     "DISC": {
+      "d": 0.0824,
+      "lo": 0.0608,
+      "hi": 0.1054,
+      "ci99": true
+     },
+     "ACC": {
+      "d": -0.4177,
+      "lo": -0.4557,
+      "hi": -0.3808,
+      "ci99": true
+     },
+     "BRIER": {
+      "d": 0.4815,
+      "lo": 0.45,
+      "hi": 0.5153,
+      "ci99": true
+     },
+     "LOGLOSS": {
+      "d": 13.1724,
+      "lo": 12.4364,
+      "hi": 13.9352,
+      "ci99": true
+     },
+     "DIST_FROM_CHANCE": {
+      "d": 0.083,
+      "lo": 0.041,
+      "hi": 0.124,
+      "ci99": true
+     },
+     "AUC_raw": {
+      "d": -0.557,
+      "lo": -0.597,
+      "hi": -0.517,
+      "ci99": true,
+      "warning": "raw AUC difference is misleading when an arm is below .5"
+     }
+    },
+    "Adaptive": {
+     "L": {
+      "d": -0.0084,
+      "lo": -0.035,
+      "hi": 0.0191,
+      "ci99": false
+     },
+     "SIGNED": {
+      "d": 0.0055,
+      "lo": -0.0345,
+      "hi": 0.048,
+      "ci99": false
+     },
+     "LEAK": {
+      "d": -0.021,
+      "lo": -0.0533,
+      "hi": 0.0127,
+      "ci99": false
+     },
+     "DISC": {
+      "d": -0.0382,
+      "lo": -0.0729,
+      "hi": -0.0047,
+      "ci99": true
+     },
+     "ACC": {
+      "d": -0.009,
+      "lo": -0.0365,
+      "hi": 0.0204,
+      "ci99": false
+     },
+     "BRIER": {
+      "d": 0.0007,
+      "lo": -0.0167,
+      "hi": 0.0172,
+      "ci99": false
+     },
+     "LOGLOSS": {
+      "d": 0.2704,
+      "lo": 0.0572,
+      "hi": 0.4967,
+      "ci99": true
+     },
+     "DIST_FROM_CHANCE": {
+      "d": -0.003,
+      "lo": -0.028,
+      "hi": 0.023,
+      "ci99": false
+     },
+     "AUC_raw": {
+      "d": -0.003,
+      "lo": -0.028,
+      "hi": 0.023,
+      "ci99": false,
+      "warning": "raw AUC difference is misleading when an arm is below .5"
+     }
+    },
+    "B6": {
+     "L": {
+      "d": -0.0652,
+      "lo": -0.0809,
+      "hi": -0.0503,
+      "ci99": true
+     },
+     "SIGNED": {
+      "d": -0.0306,
+      "lo": -0.0537,
+      "hi": -0.0077,
+      "ci99": true
+     },
+     "LEAK": {
+      "d": -0.0495,
+      "lo": -0.072,
+      "hi": -0.0267,
+      "ci99": true
+     },
+     "DISC": {
+      "d": -0.0765,
+      "lo": -0.1025,
+      "hi": -0.0526,
+      "ci99": true
+     },
+     "ACC": {
+      "d": -0.0227,
+      "lo": -0.0463,
+      "hi": 0.0005,
+      "ci99": false
+     },
+     "BRIER": {
+      "d": -0.001,
+      "lo": -0.0113,
+      "hi": 0.0085,
+      "ci99": false
+     },
+     "LOGLOSS": {
+      "d": -0.0994,
+      "lo": -0.1866,
+      "hi": -0.0245,
+      "ci99": true
+     },
+     "DIST_FROM_CHANCE": {
+      "d": -0.019,
+      "lo": -0.033,
+      "hi": -0.005,
+      "ci99": true
+     },
+     "AUC_raw": {
+      "d": -0.019,
+      "lo": -0.033,
+      "hi": -0.005,
+      "ci99": true,
+      "warning": "raw AUC difference is misleading when an arm is below .5"
+     }
+    },
+    "SACC_Nstar": {
+     "L": {
+      "d": -0.0594,
+      "lo": -0.0734,
+      "hi": -0.0458,
+      "ci99": true
+     },
+     "SIGNED": {
+      "d": -0.0286,
+      "lo": -0.0527,
+      "hi": -0.0048,
+      "ci99": true
+     },
+     "LEAK": {
+      "d": -0.049,
+      "lo": -0.0719,
+      "hi": -0.0271,
+      "ci99": true
+     },
+     "DISC": {
+      "d": -0.0799,
+      "lo": -0.1065,
+      "hi": -0.0558,
+      "ci99": true
+     },
+     "ACC": {
+      "d": -0.0234,
+      "lo": -0.0465,
+      "hi": -0.0008,
+      "ci99": true
+     },
+     "BRIER": {
+      "d": -0.0003,
+      "lo": -0.011,
+      "hi": 0.0098,
+      "ci99": false
+     },
+     "LOGLOSS": {
+      "d": -0.0659,
+      "lo": -0.133,
+      "hi": -0.0015,
+      "ci99": true
+     },
+     "DIST_FROM_CHANCE": {
+      "d": -0.018,
+      "lo": -0.033,
+      "hi": -0.004,
+      "ci99": true
+     },
+     "AUC_raw": {
+      "d": -0.018,
+      "lo": -0.033,
+      "hi": -0.004,
+      "ci99": true,
+      "warning": "raw AUC difference is misleading when an arm is below .5"
+     }
+    },
+    "B2": {
+     "L": {
+      "d": -0.0051,
+      "lo": -0.0125,
+      "hi": 0.0012,
+      "ci99": false
+     },
+     "SIGNED": {
+      "d": -0.0043,
+      "lo": -0.0142,
+      "hi": 0.0048,
+      "ci99": false
+     },
+     "LEAK": {
+      "d": -0.0087,
+      "lo": -0.019,
+      "hi": 0.0001,
+      "ci99": false
+     },
+     "DISC": {
+      "d": -0.0034,
+      "lo": -0.0123,
+      "hi": 0.0055,
+      "ci99": false
+     },
+     "ACC": {
+      "d": -0.0056,
+      "lo": -0.0139,
+      "hi": 0.0016,
+      "ci99": false
+     },
+     "BRIER": {
+      "d": 0.0009,
+      "lo": -0.0031,
+      "hi": 0.0056,
+      "ci99": false
+     },
+     "LOGLOSS": {
+      "d": -0.0405,
+      "lo": -0.1052,
+      "hi": 0.0124,
+      "ci99": false
+     },
+     "DIST_FROM_CHANCE": {
+      "d": -0.002,
+      "lo": -0.009,
+      "hi": 0.004,
+      "ci99": false
+     },
+     "AUC_raw": {
+      "d": -0.002,
+      "lo": -0.009,
+      "hi": 0.004,
+      "ci99": false,
+      "warning": "raw AUC difference is misleading when an arm is below .5"
+     }
+    },
+    "Detector": {
+     "L": {
+      "d": 0.3489,
+      "lo": 0.3184,
+      "hi": 0.3787,
+      "ci99": true
+     },
+     "SIGNED": {
+      "d": 0.4085,
+      "lo": 0.3568,
+      "hi": 0.462,
+      "ci99": true
+     },
+     "LEAK": {
+      "d": 0.2254,
+      "lo": 0.1941,
+      "hi": 0.2552,
+      "ci99": true
+     },
+     "DISC": {
+      "d": 0.0938,
+      "lo": 0.0733,
+      "hi": 0.115,
+      "ci99": true
+     },
+     "ACC": {
+      "d": 0.1809,
+      "lo": 0.1513,
+      "hi": 0.2111,
+      "ci99": true
+     },
+     "BRIER": {
+      "d": -0.1051,
+      "lo": -0.126,
+      "hi": -0.0833,
+      "ci99": true
+     },
+     "LOGLOSS": {
+      "d": 1.1847,
+      "lo": 0.8297,
+      "hi": 1.5444,
+      "ci99": true
+     },
+     "DIST_FROM_CHANCE": {
+      "d": 0.151,
+      "lo": 0.123,
+      "hi": 0.179,
+      "ci99": true
+     },
+     "AUC_raw": {
+      "d": 0.151,
+      "lo": 0.123,
+      "hi": 0.179,
+      "ci99": true,
+      "warning": "raw AUC difference is misleading when an arm is below .5"
+     }
+    },
+    "INTACT": {
+     "L": {
+      "d": 0.3747,
+      "lo": 0.3439,
+      "hi": 0.4039,
+      "ci99": true
+     },
+     "SIGNED": {
+      "d": 0.4496,
+      "lo": 0.398,
+      "hi": 0.5024,
+      "ci99": true
+     },
+     "LEAK": {
+      "d": 0.2477,
+      "lo": 0.2161,
+      "hi": 0.2783,
+      "ci99": true
+     },
+     "DISC": {
+      "d": 0.0985,
+      "lo": 0.0778,
+      "hi": 0.12,
+      "ci99": true
+     },
+     "ACC": {
+      "d": 0.201,
+      "lo": 0.1703,
+      "hi": 0.2308,
+      "ci99": true
+     },
+     "BRIER": {
+      "d": -0.1221,
+      "lo": -0.1431,
+      "hi": -0.0999,
+      "ci99": true
+     },
+     "LOGLOSS": {
+      "d": 0.9422,
+      "lo": 0.5651,
+      "hi": 1.3349,
+      "ci99": true
+     },
+     "DIST_FROM_CHANCE": {
+      "d": 0.217,
+      "lo": 0.189,
+      "hi": 0.248,
+      "ci99": true
+     },
+     "AUC_raw": {
+      "d": 0.217,
+      "lo": 0.189,
+      "hi": 0.248,
+      "ci99": true,
+      "warning": "raw AUC difference is misleading when an arm is below .5"
+     }
+    }
+   },
+   "ranks": {
+    "L": [
+     "SWAP",
+     "Global ladder",
+     "SACC",
+     "Adaptive",
+     "Global mask",
+     "SACC-mask",
+     "Anonymised input",
+     "INTACT"
+    ],
+    "L_swap_position": 1,
+    "SIGNED": [
+     "SWAP",
+     "Global ladder",
+     "SACC",
+     "Global mask",
+     "SACC-mask",
+     "Adaptive",
+     "Anonymised input",
+     "INTACT"
+    ],
+    "SIGNED_swap_position": 1,
+    "LEAK": [
+     "SWAP",
+     "Global ladder",
+     "SACC",
+     "Adaptive",
+     "Global mask",
+     "SACC-mask",
+     "Anonymised input",
+     "INTACT"
+    ],
+    "LEAK_swap_position": 1,
+    "DISC": [
+     "SACC",
+     "Global ladder",
+     "Adaptive",
+     "Global mask",
+     "SACC-mask",
+     "SWAP",
+     "Anonymised input",
+     "INTACT"
+    ],
+    "DISC_swap_position": 6,
+    "ACC": [
+     "SWAP",
+     "SACC",
+     "Global ladder",
+     "Adaptive",
+     "Global mask",
+     "SACC-mask",
+     "Anonymised input",
+     "INTACT"
+    ],
+    "ACC_swap_position": 1,
+    "BRIER": [
+     "SWAP",
+     "Global mask",
+     "Adaptive",
+     "SACC-mask",
+     "SACC",
+     "Global ladder",
+     "Anonymised input",
+     "INTACT"
+    ],
+    "BRIER_swap_position": 1,
+    "LOGLOSS": [
+     "SWAP",
+     "Anonymised input",
+     "INTACT",
+     "Adaptive",
+     "SACC-mask",
+     "Global mask",
+     "SACC",
+     "Global ladder"
+    ],
+    "LOGLOSS_swap_position": 1,
+    "DIST_FROM_CHANCE": [
+     "Global ladder",
+     "SACC",
+     "Adaptive",
+     "Global mask",
+     "SACC-mask",
+     "SWAP",
+     "Anonymised input",
+     "INTACT"
+    ],
+    "DIST_FROM_CHANCE_swap_position": 6
+   },
+   "auc_gate": {
+    "max_abs_dev_vs_x1_auc": 0.0,
+    "passes": true,
+    "stored_entries": 1473
+   }
+  },
+  "tab": {
+   "entries": 244,
+   "male": 187,
+   "female": 57,
+   "basis": "seeded orders, SEX only, stratum-balanced; the tab:x1 cohort",
+   "levels": {
+    "SWAP": {
+     "L": 0.3601,
+     "SIGNED": -0.0192,
+     "LEAK": 0.3831,
+     "DISC": 0.955,
+     "ACC": 0.3831,
+     "BRIER": 0.5957,
+     "LOGLOSS": 10.7639,
+     "AUC": 0.362,
+     "DIST_FROM_CHANCE": 0.138,
+     "share_p_below_.01": 0.652
+    },
+    "Adaptive": {
+     "L": 0.6079,
+     "SIGNED": 0.3629,
+     "LEAK": 0.6159,
+     "DISC": 0.9859,
+     "ACC": 0.6159,
+     "BRIER": 0.3793,
+     "LOGLOSS": 8.9233,
+     "AUC": 0.518,
+     "DIST_FROM_CHANCE": 0.018,
+     "share_p_below_.01": 0.209
+    },
+    "B6": {
+     "L": 0.3055,
+     "SIGNED": 0.175,
+     "LEAK": 0.546,
+     "DISC": 0.8634,
+     "ACC": 0.4857,
+     "BRIER": 0.3594,
+     "LOGLOSS": 3.0914,
+     "AUC": 0.429,
+     "DIST_FROM_CHANCE": 0.071,
+     "share_p_below_.01": 0.066
+    },
+    "SACC_Nstar": {
+     "L": 0.3141,
+     "SIGNED": 0.1766,
+     "LEAK": 0.5224,
+     "DISC": 0.8264,
+     "ACC": 0.4956,
+     "BRIER": 0.3624,
+     "LOGLOSS": 3.3698,
+     "AUC": 0.435,
+     "DIST_FROM_CHANCE": 0.065,
+     "share_p_below_.01": 0.066
+    },
+    "B2": {
+     "L": 0.3781,
+     "SIGNED": 0.2153,
+     "LEAK": 0.5895,
+     "DISC": 0.926,
+     "ACC": 0.5197,
+     "BRIER": 0.3617,
+     "LOGLOSS": 2.5091,
+     "AUC": 0.486,
+     "DIST_FROM_CHANCE": 0.014,
+     "share_p_below_.01": 0.066
+    },
+    "C1": {
+     "L": 0.3584,
+     "SIGNED": 0.2076,
+     "LEAK": 0.5723,
+     "DISC": 0.8878,
+     "ACC": 0.4956,
+     "BRIER": 0.3611,
+     "LOGLOSS": 2.7152,
+     "AUC": 0.486,
+     "DIST_FROM_CHANCE": 0.014,
+     "share_p_below_.01": 0.066
+    },
+    "Detector": {
+     "L": 0.5532,
+     "SIGNED": 0.3165,
+     "LEAK": 0.5895,
+     "DISC": 0.963,
+     "ACC": 0.5922,
+     "BRIER": 0.3899,
+     "LOGLOSS": 6.697,
+     "AUC": 0.487,
+     "DIST_FROM_CHANCE": 0.013,
+     "share_p_below_.01": 0.205
+    },
+    "INTACT": {
+     "L": 0.5745,
+     "SIGNED": 0.3242,
+     "LEAK": 0.5976,
+     "DISC": 0.9798,
+     "ACC": 0.5922,
+     "BRIER": 0.3986,
+     "LOGLOSS": 7.8048,
+     "AUC": 0.48,
+     "DIST_FROM_CHANCE": 0.02,
+     "share_p_below_.01": 0.217
+    }
+   },
+   "vs_SACCmask": {
+    "SWAP": {
+     "L": {
+      "d": 0.0017,
+      "lo": -0.1126,
+      "hi": 0.1125,
+      "ci99": false
+     },
+     "SIGNED": {
+      "d": -0.2268,
+      "lo": -0.4091,
+      "hi": -0.0418,
+      "ci99": true
+     },
+     "LEAK": {
+      "d": -0.1893,
+      "lo": -0.3209,
+      "hi": -0.0553,
+      "ci99": true
+     },
+     "DISC": {
+      "d": 0.0672,
+      "lo": 0.0164,
+      "hi": 0.1365,
+      "ci99": true
+     },
+     "ACC": {
+      "d": -0.1126,
+      "lo": -0.2341,
+      "hi": 0.0098,
+      "ci99": false
+     },
+     "BRIER": {
+      "d": 0.2346,
+      "lo": 0.1221,
+      "hi": 0.3427,
+      "ci99": true
+     },
+     "LOGLOSS": {
+      "d": 8.0488,
+      "lo": 5.988,
+      "hi": 10.0298,
+      "ci99": true
+     },
+     "DIST_FROM_CHANCE": {
+      "d": 0.124,
+      "lo": -0.038,
+      "hi": 0.216,
+      "ci99": false
+     },
+     "AUC_raw": {
+      "d": -0.124,
+      "lo": -0.27,
+      "hi": 0.029,
+      "ci99": false,
+      "warning": "raw AUC difference is misleading when an arm is below .5"
+     }
+    },
+    "Adaptive": {
+     "L": {
+      "d": 0.2496,
+      "lo": 0.1534,
+      "hi": 0.3487,
+      "ci99": true
+     },
+     "SIGNED": {
+      "d": 0.1553,
+      "lo": 0.0206,
+      "hi": 0.2929,
+      "ci99": true
+     },
+     "LEAK": {
+      "d": 0.0435,
+      "lo": -0.0498,
+      "hi": 0.1393,
+      "ci99": false
+     },
+     "DISC": {
+      "d": 0.0981,
+      "lo": 0.0409,
+      "hi": 0.167,
+      "ci99": true
+     },
+     "ACC": {
+      "d": 0.1202,
+      "lo": 0.0207,
+      "hi": 0.2208,
+      "ci99": true
+     },
+     "BRIER": {
+      "d": 0.0182,
+      "lo": -0.0637,
+      "hi": 0.0985,
+      "ci99": false
+     },
+     "LOGLOSS": {
+      "d": 6.2081,
+      "lo": 4.2561,
+      "hi": 8.3002,
+      "ci99": true
+     },
+     "DIST_FROM_CHANCE": {
+      "d": 0.004,
+      "lo": -0.108,
+      "hi": 0.135,
+      "ci99": false
+     },
+     "AUC_raw": {
+      "d": 0.032,
+      "lo": -0.128,
+      "hi": 0.185,
+      "ci99": false,
+      "warning": "raw AUC difference is misleading when an arm is below .5"
+     }
+    },
+    "B6": {
+     "L": {
+      "d": -0.0529,
+      "lo": -0.0907,
+      "hi": -0.0177,
+      "ci99": true
+     },
+     "SIGNED": {
+      "d": -0.0326,
+      "lo": -0.0761,
+      "hi": 0.0171,
+      "ci99": false
+     },
+     "LEAK": {
+      "d": -0.0263,
+      "lo": -0.1205,
+      "hi": 0.0562,
+      "ci99": false
+     },
+     "DISC": {
+      "d": -0.0244,
+      "lo": -0.1272,
+      "hi": 0.0705,
+      "ci99": false
+     },
+     "ACC": {
+      "d": -0.0099,
+      "lo": -0.085,
+      "hi": 0.0587,
+      "ci99": false
+     },
+     "BRIER": {
+      "d": -0.0018,
+      "lo": -0.0368,
+      "hi": 0.0293,
+      "ci99": false
+     },
+     "LOGLOSS": {
+      "d": 0.3763,
+      "lo": -0.8156,
+      "hi": 1.4924,
+      "ci99": false
+     },
+     "DIST_FROM_CHANCE": {
+      "d": 0.057,
+      "lo": -0.074,
+      "hi": 0.115,
+      "ci99": false
+     },
+     "AUC_raw": {
+      "d": -0.057,
+      "lo": -0.125,
+      "hi": 0.013,
+      "ci99": false,
+      "warning": "raw AUC difference is misleading when an arm is below .5"
+     }
+    },
+    "SACC_Nstar": {
+     "L": {
+      "d": -0.0442,
+      "lo": -0.0746,
+      "hi": -0.018,
+      "ci99": true
+     },
+     "SIGNED": {
+      "d": -0.031,
+      "lo": -0.0678,
+      "hi": 0.0016,
+      "ci99": false
+     },
+     "LEAK": {
+      "d": -0.05,
+      "lo": -0.1388,
+      "hi": 0.0204,
+      "ci99": false
+     },
+     "DISC": {
+      "d": -0.0614,
+      "lo": -0.15,
+      "hi": 0.0159,
+      "ci99": false
+     },
+     "ACC": {
+      "d": 0.0,
+      "lo": -0.0461,
+      "hi": 0.0484,
+      "ci99": false
+     },
+     "BRIER": {
+      "d": 0.0012,
+      "lo": -0.0221,
+      "hi": 0.0255,
+      "ci99": false
+     },
+     "LOGLOSS": {
+      "d": 0.6546,
+      "lo": 0.0436,
+      "hi": 1.5863,
+      "ci99": true
+     },
+     "DIST_FROM_CHANCE": {
+      "d": 0.051,
+      "lo": -0.07,
+      "hi": 0.1,
+      "ci99": false
+     },
+     "AUC_raw": {
+      "d": -0.051,
+      "lo": -0.103,
+      "hi": -0.005,
+      "ci99": true,
+      "warning": "raw AUC difference is misleading when an arm is below .5"
+     }
+    },
+    "B2": {
+     "L": {
+      "d": 0.0197,
+      "lo": -0.0037,
+      "hi": 0.043,
+      "ci99": false
+     },
+     "SIGNED": {
+      "d": 0.0077,
+      "lo": -0.0216,
+      "hi": 0.0391,
+      "ci99": false
+     },
+     "LEAK": {
+      "d": 0.0172,
+      "lo": -0.0326,
+      "hi": 0.0692,
+      "ci99": false
+     },
+     "DISC": {
+      "d": 0.0382,
+      "lo": -0.0256,
+      "hi": 0.105,
+      "ci99": false
+     },
+     "ACC": {
+      "d": 0.0241,
+      "lo": -0.0202,
+      "hi": 0.0695,
+      "ci99": false
+     },
+     "BRIER": {
+      "d": 0.0006,
+      "lo": -0.0233,
+      "hi": 0.0258,
+      "ci99": false
+     },
+     "LOGLOSS": {
+      "d": -0.2061,
+      "lo": -0.7659,
+      "hi": 0.1715,
+      "ci99": false
+     },
+     "DIST_FROM_CHANCE": {
+      "d": 0.0,
+      "lo": -0.042,
+      "hi": 0.046,
+      "ci99": false
+     },
+     "AUC_raw": {
+      "d": 0.0,
+      "lo": -0.046,
+      "hi": 0.044,
+      "ci99": false,
+      "warning": "raw AUC difference is misleading when an arm is below .5"
+     }
+    },
+    "Detector": {
+     "L": {
+      "d": 0.1949,
+      "lo": 0.1072,
+      "hi": 0.2886,
+      "ci99": true
+     },
+     "SIGNED": {
+      "d": 0.1089,
+      "lo": -0.0206,
+      "hi": 0.2383,
+      "ci99": false
+     },
+     "LEAK": {
+      "d": 0.0172,
+      "lo": -0.0702,
+      "hi": 0.1055,
+      "ci99": false
+     },
+     "DISC": {
+      "d": 0.0752,
+      "lo": 0.0265,
+      "hi": 0.1444,
+      "ci99": true
+     },
+     "ACC": {
+      "d": 0.0966,
+      "lo": 0.002,
+      "hi": 0.1919,
+      "ci99": true
+     },
+     "BRIER": {
+      "d": 0.0288,
+      "lo": -0.0469,
+      "hi": 0.105,
+      "ci99": false
+     },
+     "LOGLOSS": {
+      "d": 3.9818,
+      "lo": 2.5077,
+      "hi": 5.7165,
+      "ci99": true
+     },
+     "DIST_FROM_CHANCE": {
+      "d": -0.001,
+      "lo": -0.094,
+      "hi": 0.115,
+      "ci99": false
+     },
+     "AUC_raw": {
+      "d": 0.001,
+      "lo": -0.141,
+      "hi": 0.138,
+      "ci99": false,
+      "warning": "raw AUC difference is misleading when an arm is below .5"
+     }
+    },
+    "INTACT": {
+     "L": {
+      "d": 0.2162,
+      "lo": 0.1285,
+      "hi": 0.3132,
+      "ci99": true
+     },
+     "SIGNED": {
+      "d": 0.1166,
+      "lo": -0.0113,
+      "hi": 0.2522,
+      "ci99": false
+     },
+     "LEAK": {
+      "d": 0.0252,
+      "lo": -0.0623,
+      "hi": 0.1154,
+      "ci99": false
+     },
+     "DISC": {
+      "d": 0.092,
+      "lo": 0.0265,
+      "hi": 0.1658,
+      "ci99": true
+     },
+     "ACC": {
+      "d": 0.0966,
+      "lo": -0.0014,
+      "hi": 0.1932,
+      "ci99": false
+     },
+     "BRIER": {
+      "d": 0.0374,
+      "lo": -0.0404,
+      "hi": 0.1191,
+      "ci99": false
+     },
+     "LOGLOSS": {
+      "d": 5.0896,
+      "lo": 3.4851,
+      "hi": 6.9789,
+      "ci99": true
+     },
+     "DIST_FROM_CHANCE": {
+      "d": 0.006,
+      "lo": -0.094,
+      "hi": 0.128,
+      "ci99": false
+     },
+     "AUC_raw": {
+      "d": -0.006,
+      "lo": -0.151,
+      "hi": 0.132,
+      "ci99": false,
+      "warning": "raw AUC difference is misleading when an arm is below .5"
+     }
+    }
+   },
+   "ranks": {
+    "L": [
+     "Global ladder",
+     "SACC",
+     "SACC-mask",
+     "SWAP",
+     "Global mask",
+     "Anonymised input",
+     "INTACT",
+     "Adaptive"
+    ],
+    "L_swap_position": 4,
+    "SIGNED": [
+     "SWAP",
+     "Global ladder",
+     "SACC",
+     "SACC-mask",
+     "Global mask",
+     "Anonymised input",
+     "INTACT",
+     "Adaptive"
+    ],
+    "SIGNED_swap_position": 1,
+    "LEAK": [
+     "SWAP",
+     "SACC",
+     "Global ladder",
+     "SACC-mask",
+     "Global mask",
+     "Anonymised input",
+     "INTACT",
+     "Adaptive"
+    ],
+    "LEAK_swap_position": 1,
+    "DISC": [
+     "SACC",
+     "Global ladder",
+     "SACC-mask",
+     "Global mask",
+     "SWAP",
+     "Anonymised input",
+     "INTACT",
+     "Adaptive"
+    ],
+    "DISC_swap_position": 5,
+    "ACC": [
+     "SWAP",
+     "Global ladder",
+     "SACC",
+     "SACC-mask",
+     "Global mask",
+     "Anonymised input",
+     "INTACT",
+     "Adaptive"
+    ],
+    "ACC_swap_position": 1,
+    "BRIER": [
+     "SWAP",
+     "INTACT",
+     "Anonymised input",
+     "Adaptive",
+     "SACC",
+     "Global mask",
+     "SACC-mask",
+     "Global ladder"
+    ],
+    "BRIER_swap_position": 1,
+    "LOGLOSS": [
+     "SWAP",
+     "Adaptive",
+     "INTACT",
+     "Anonymised input",
+     "SACC",
+     "Global ladder",
+     "SACC-mask",
+     "Global mask"
+    ],
+    "LOGLOSS_swap_position": 1,
+    "DIST_FROM_CHANCE": [
+     "Anonymised input",
+     "Global mask",
+     "SACC-mask",
+     "Adaptive",
+     "INTACT",
+     "SACC",
+     "Global ladder",
+     "SWAP"
+    ],
+    "DIST_FROM_CHANCE_swap_position": 8
+   },
+   "auc_gate": {
+    "max_abs_dev_vs_x1_auc": 0.0,
+    "passes": true,
+    "stored_entries": 244
+   },
+   "first_named": {
+    "entries": 98,
+    "female": 14,
+    "auc": {
+     "SWAP": 0.053,
+     "Adaptive": 1.0,
+     "B6": 0.592,
+     "SACC_Nstar": 0.616,
+     "B2": 0.668,
+     "C1": 0.666,
+     "Detector": 0.979,
+     "INTACT": 0.968
+    },
+    "dist_from_chance": {
+     "SWAP": 0.447,
+     "Adaptive": 0.5,
+     "B6": 0.092,
+     "SACC_Nstar": 0.116,
+     "B2": 0.168,
+     "C1": 0.166,
+     "Detector": 0.479,
+     "INTACT": 0.468
+    },
+    "rank_dist_from_chance": [
+     "Global ladder",
+     "SACC",
+     "SACC-mask",
+     "Global mask",
+     "SWAP",
+     "INTACT",
+     "Anonymised input",
+     "Adaptive"
+    ],
+    "swap_position": 5
+   }
+  }
+ },
+ "rule_aware": {
+  "entries": 1513,
+  "basis": "MedQA SEX, the rule-aware pass's own cohort",
+  "levels": {
+   "SWAP": {
+    "L": 0.2405,
+    "SIGNED": -0.609,
+    "LEAK": 0.2526,
+    "DISC": 0.9803,
+    "ACC": 0.2594,
+    "BRIER": 0.7226,
+    "LOGLOSS": 14.4452,
+    "AUC": 0.18,
+    "DIST_FROM_CHANCE": 0.32
+   },
+   "SWAP_rules": {
+    "L": 0.6543,
+    "SIGNED": 0.4909,
+    "LEAK": 0.7777,
+    "DISC": 0.959,
+    "ACC": 0.8048,
+    "BRIER": 0.1456,
+    "LOGLOSS": 0.5824,
+    "AUC": 0.882,
+    "DIST_FROM_CHANCE": 0.382
+   },
+   "C1": {
+    "L": 0.4939,
+    "SIGNED": 0.2861,
+    "LEAK": 0.6281,
+    "DISC": 0.8971,
+    "ACC": 0.6778,
+    "BRIER": 0.2398,
+    "LOGLOSS": 1.3136,
+    "AUC": 0.739,
+    "DIST_FROM_CHANCE": 0.239
+   }
+  },
+  "told_minus_untold": {
+   "L": {
+    "d": 0.4138,
+    "lo": 0.3737,
+    "hi": 0.4544,
+    "ci99": true
+   },
+   "SIGNED": {
+    "d": 1.0999,
+    "lo": 1.0155,
+    "hi": 1.1833,
+    "ci99": true
+   },
+   "LEAK": {
+    "d": 0.5251,
+    "lo": 0.484,
+    "hi": 0.5664,
+    "ci99": true
+   },
+   "DISC": {
+    "d": -0.0213,
+    "lo": -0.039,
+    "hi": -0.0054,
+    "ci99": true
+   },
+   "ACC": {
+    "d": 0.5454,
+    "lo": 0.5057,
+    "hi": 0.5855,
+    "ci99": true
+   },
+   "BRIER": {
+    "d": -0.577,
+    "lo": -0.6118,
+    "hi": -0.5423,
+    "ci99": true
+   },
+   "LOGLOSS": {
+    "d": -13.8628,
+    "lo": -14.5932,
+    "hi": -13.2247,
+    "ci99": true
+   }
+  },
+  "told_dist_minus_SACCmask": {
+   "d": 0.143,
+   "lo": 0.11,
+   "hi": 0.178
+  }
+ },
+ "cpr_ipr": {
+  "medqa": {
+   "IPR_sex_balanced": {
+    "SWAP": 0.7419,
+    "Adaptive": 0.3332,
+    "Global ladder": 0.3469,
+    "SACC": 0.3476,
+    "Global mask": 0.3297,
+    "SACC-mask": 0.3242,
+    "Anonymised input": 0.1433,
+    "INTACT": 0.1232
+   },
+   "IPR_note": "share of SEX entries whose order-averaged top-1 answer is not the gold value, stratum-balanced; it is 1 - attack accuracy, an analogue of Oh et al. (2026) IPR restricted to one attribute and to our scorer, not their reported quantity",
+   "CPR": "not directly comparable: it needs every protected attribute of a subject, and the stored p is p(gold) renormalised over the candidate set, from which the top-1 of an eight-option OCCUPATION question cannot be recovered"
+  },
+  "tab": {
+   "IPR_sex_balanced": {
+    "SWAP": 0.6169,
+    "Adaptive": 0.3841,
+    "Global ladder": 0.5143,
+    "SACC": 0.5044,
+    "Global mask": 0.4803,
+    "SACC-mask": 0.5044,
+    "Anonymised input": 0.4078,
+    "INTACT": 0.4078
+   },
+   "IPR_note": "share of SEX entries whose order-averaged top-1 answer is not the gold value, stratum-balanced; it is 1 - attack accuracy, an analogue of Oh et al. (2026) IPR restricted to one attribute and to our scorer, not their reported quantity",
+   "CPR": "not directly comparable: it needs every protected attribute of a subject, and the stored p is p(gold) renormalised over the candidate set, from which the top-1 of an eight-option OCCUPATION question cannot be recovered"
+  }
+ }
+}

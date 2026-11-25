@@ -1,0 +1,4 @@
+corpus,arm,documents,TPS,documents_edited,TPS_edited,edited_char_share,mean_edit_regions,mlm,embedder
+medqa,SACC_Nfix,400,0.8595,367,0.8469,0.0115,14.62,bert-base-uncased,intfloat/e5-base-v2
+tab,SACC_Nfix,144,0.8497,140,0.8454,0.0069,26.05,bert-base-uncased,intfloat/e5-base-v2
+synthpai,SACC_Nfix,281,0.9447,74,0.79,0.0037,0.45,bert-base-uncased,intfloat/e5-base-v2

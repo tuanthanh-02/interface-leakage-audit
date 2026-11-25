@@ -1,0 +1,716 @@
+{
+ "prereg": "runs/dev/preregs/sacc_review7_prereg.md Part X",
+ "corpora": {
+  "medqa": {
+   "populations": {
+    "other_occ|person": 7,
+    "unresolved|person": 3031,
+    "direct|person": 4161,
+    "other_sexrel|person": 42,
+    "nonperson|noun": 242,
+    "relational|person": 143,
+    "unresolved|noun": 4,
+    "other_occ|noun": 2
+   },
+   "unsampled": {
+    "other_occ|person": 7,
+    "unresolved|noun": 4,
+    "other_occ|noun": 2
+   },
+   "overlap_with_B3": {
+    "PO": 7384,
+    "B3": 7390,
+    "both": 7384,
+    "PO_only": 0,
+    "B3_only": 6
+   },
+   "judges": {
+    "gpt-4o-mini": {
+     "global": {
+      "edits": {
+       "d": 7619.0,
+       "lo95": 7619.0,
+       "hi95": 7619.0
+      },
+      "precision": {
+       "d": 0.98,
+       "lo95": 0.975,
+       "hi95": 0.985
+      },
+      "recall": {
+       "d": 1.0,
+       "lo95": 1.0,
+       "hi95": 1.0
+      },
+      "share_other_person": {
+       "d": 0.001,
+       "lo95": 0.0,
+       "hi95": 0.003
+      },
+      "share_no_person": {
+       "d": 0.019,
+       "lo95": 0.014,
+       "hi95": 0.024
+      }
+     },
+     "person_lexicon": {
+      "edits": {
+       "d": 7377.0,
+       "lo95": 7377.0,
+       "hi95": 7377.0
+      },
+      "precision": {
+       "d": 1.0,
+       "lo95": 0.999,
+       "hi95": 1.0
+      },
+      "recall": {
+       "d": 0.988,
+       "lo95": 0.983,
+       "hi95": 0.993
+      },
+      "share_other_person": {
+       "d": 0.0,
+       "lo95": 0.0,
+       "hi95": 0.0
+      },
+      "share_no_person": {
+       "d": 0.0,
+       "lo95": 0.0,
+       "hi95": 0.001
+      }
+     },
+     "B3": {
+      "edits": {
+       "d": 7377.0,
+       "lo95": 7377.0,
+       "hi95": 7377.0
+      },
+      "precision": {
+       "d": 1.0,
+       "lo95": 0.999,
+       "hi95": 1.0
+      },
+      "recall": {
+       "d": 0.988,
+       "lo95": 0.983,
+       "hi95": 0.993
+      },
+      "share_other_person": {
+       "d": 0.0,
+       "lo95": 0.0,
+       "hi95": 0.0
+      },
+      "share_no_person": {
+       "d": 0.0,
+       "lo95": 0.0,
+       "hi95": 0.001
+      }
+     },
+     "SACC": {
+      "edits": {
+       "d": 7335.0,
+       "lo95": 7335.0,
+       "hi95": 7335.0
+      },
+      "precision": {
+       "d": 1.0,
+       "lo95": 1.0,
+       "hi95": 1.0
+      },
+      "recall": {
+       "d": 0.983,
+       "lo95": 0.978,
+       "hi95": 0.987
+      },
+      "share_other_person": {
+       "d": 0.0,
+       "lo95": 0.0,
+       "hi95": 0.0
+      },
+      "share_no_person": {
+       "d": 0.0,
+       "lo95": 0.0,
+       "hi95": 0.0
+      }
+     }
+    },
+    "gpt-4.1-mini": {
+     "global": {
+      "edits": {
+       "d": 7619.0,
+       "lo95": 7619.0,
+       "hi95": 7619.0
+      },
+      "precision": {
+       "d": 0.968,
+       "lo95": 0.967,
+       "hi95": 0.97
+      },
+      "recall": {
+       "d": 1.0,
+       "lo95": 1.0,
+       "hi95": 1.0
+      },
+      "share_other_person": {
+       "d": 0.002,
+       "lo95": 0.0,
+       "hi95": 0.003
+      },
+      "share_no_person": {
+       "d": 0.03,
+       "lo95": 0.028,
+       "hi95": 0.032
+      }
+     },
+     "person_lexicon": {
+      "edits": {
+       "d": 7377.0,
+       "lo95": 7377.0,
+       "hi95": 7377.0
+      },
+      "precision": {
+       "d": 0.999,
+       "lo95": 0.998,
+       "hi95": 1.0
+      },
+      "recall": {
+       "d": 0.999,
+       "lo95": 0.998,
+       "hi95": 1.0
+      },
+      "share_other_person": {
+       "d": 0.001,
+       "lo95": 0.0,
+       "hi95": 0.002
+      },
+      "share_no_person": {
+       "d": 0.0,
+       "lo95": -0.0,
+       "hi95": 0.001
+      }
+     },
+     "B3": {
+      "edits": {
+       "d": 7377.0,
+       "lo95": 7377.0,
+       "hi95": 7377.0
+      },
+      "precision": {
+       "d": 0.999,
+       "lo95": 0.998,
+       "hi95": 1.0
+      },
+      "recall": {
+       "d": 0.999,
+       "lo95": 0.998,
+       "hi95": 1.0
+      },
+      "share_other_person": {
+       "d": 0.001,
+       "lo95": 0.0,
+       "hi95": 0.002
+      },
+      "share_no_person": {
+       "d": 0.0,
+       "lo95": -0.0,
+       "hi95": 0.001
+      }
+     },
+     "SACC": {
+      "edits": {
+       "d": 7335.0,
+       "lo95": 7335.0,
+       "hi95": 7335.0
+      },
+      "precision": {
+       "d": 1.0,
+       "lo95": 1.0,
+       "hi95": 1.0
+      },
+      "recall": {
+       "d": 0.995,
+       "lo95": 0.993,
+       "hi95": 0.996
+      },
+      "share_other_person": {
+       "d": 0.0,
+       "lo95": 0.0,
+       "hi95": 0.0
+      },
+      "share_no_person": {
+       "d": 0.0,
+       "lo95": 0.0,
+       "hi95": 0.0
+      }
+     }
+    },
+    "gpt-4.1": {
+     "global": {
+      "edits": {
+       "d": 7619.0,
+       "lo95": 7619.0,
+       "hi95": 7619.0
+      },
+      "precision": {
+       "d": 0.97,
+       "lo95": 0.967,
+       "hi95": 0.974
+      },
+      "recall": {
+       "d": 1.0,
+       "lo95": 1.0,
+       "hi95": 1.0
+      },
+      "share_other_person": {
+       "d": 0.002,
+       "lo95": 0.001,
+       "hi95": 0.004
+      },
+      "share_no_person": {
+       "d": 0.028,
+       "lo95": 0.024,
+       "hi95": 0.031
+      }
+     },
+     "person_lexicon": {
+      "edits": {
+       "d": 7377.0,
+       "lo95": 7377.0,
+       "hi95": 7377.0
+      },
+      "precision": {
+       "d": 0.999,
+       "lo95": 0.998,
+       "hi95": 0.999
+      },
+      "recall": {
+       "d": 0.997,
+       "lo95": 0.993,
+       "hi95": 0.999
+      },
+      "share_other_person": {
+       "d": 0.001,
+       "lo95": 0.001,
+       "hi95": 0.002
+      },
+      "share_no_person": {
+       "d": 0.0,
+       "lo95": -0.0,
+       "hi95": 0.0
+      }
+     },
+     "B3": {
+      "edits": {
+       "d": 7377.0,
+       "lo95": 7377.0,
+       "hi95": 7377.0
+      },
+      "precision": {
+       "d": 0.999,
+       "lo95": 0.998,
+       "hi95": 0.999
+      },
+      "recall": {
+       "d": 0.997,
+       "lo95": 0.993,
+       "hi95": 0.999
+      },
+      "share_other_person": {
+       "d": 0.001,
+       "lo95": 0.001,
+       "hi95": 0.002
+      },
+      "share_no_person": {
+       "d": 0.0,
+       "lo95": -0.0,
+       "hi95": 0.0
+      }
+     },
+     "SACC": {
+      "edits": {
+       "d": 7335.0,
+       "lo95": 7335.0,
+       "hi95": 7335.0
+      },
+      "precision": {
+       "d": 1.0,
+       "lo95": 1.0,
+       "hi95": 1.0
+      },
+      "recall": {
+       "d": 0.992,
+       "lo95": 0.989,
+       "hi95": 0.995
+      },
+      "share_other_person": {
+       "d": 0.0,
+       "lo95": 0.0,
+       "hi95": 0.0
+      },
+      "share_no_person": {
+       "d": 0.0,
+       "lo95": 0.0,
+       "hi95": 0.0
+      }
+     }
+    }
+   }
+  },
+  "tab": {
+   "populations": {
+    "nonperson|noun": 707,
+    "unresolved|person": 1656,
+    "other_occ|noun": 45,
+    "direct|person": 163,
+    "other_occ|person": 120,
+    "other_sexrel|person": 62,
+    "unresolved|noun": 22,
+    "nonperson|person": 33,
+    "relational|person": 26,
+    "direct|noun": 7
+   },
+   "unsampled": {},
+   "overlap_with_B3": {
+    "PO": 2060,
+    "B3": 2101,
+    "both": 2027,
+    "PO_only": 33,
+    "B3_only": 74
+   },
+   "judges": {
+    "gpt-4o-mini": {
+     "global": {
+      "edits": {
+       "d": 2841.0,
+       "lo95": 2841.0,
+       "hi95": 2841.0
+      },
+      "precision": {
+       "d": 0.658,
+       "lo95": 0.591,
+       "hi95": 0.719
+      },
+      "recall": {
+       "d": 1.0,
+       "lo95": 1.0,
+       "hi95": 1.0
+      },
+      "share_other_person": {
+       "d": 0.016,
+       "lo95": 0.0,
+       "hi95": 0.047
+      },
+      "share_no_person": {
+       "d": 0.326,
+       "lo95": 0.271,
+       "hi95": 0.387
+      }
+     },
+     "person_lexicon": {
+      "edits": {
+       "d": 2060.0,
+       "lo95": 2060.0,
+       "hi95": 2060.0
+      },
+      "precision": {
+       "d": 0.872,
+       "lo95": 0.788,
+       "hi95": 0.94
+      },
+      "recall": {
+       "d": 0.962,
+       "lo95": 0.916,
+       "hi95": 0.99
+      },
+      "share_other_person": {
+       "d": 0.022,
+       "lo95": 0.0,
+       "hi95": 0.065
+      },
+      "share_no_person": {
+       "d": 0.105,
+       "lo95": 0.044,
+       "hi95": 0.181
+      }
+     },
+     "B3": {
+      "edits": {
+       "d": 2101.0,
+       "lo95": 2101.0,
+       "hi95": 2101.0
+      },
+      "precision": {
+       "d": 0.854,
+       "lo95": 0.772,
+       "hi95": 0.921
+      },
+      "recall": {
+       "d": 0.96,
+       "lo95": 0.916,
+       "hi95": 0.983
+      },
+      "share_other_person": {
+       "d": 0.022,
+       "lo95": 0.0,
+       "hi95": 0.064
+      },
+      "share_no_person": {
+       "d": 0.124,
+       "lo95": 0.065,
+       "hi95": 0.198
+      }
+     },
+     "SACC": {
+      "edits": {
+       "d": 1874.0,
+       "lo95": 1874.0,
+       "hi95": 1874.0
+      },
+      "precision": {
+       "d": 0.893,
+       "lo95": 0.803,
+       "hi95": 0.963
+      },
+      "recall": {
+       "d": 0.896,
+       "lo95": 0.85,
+       "hi95": 0.928
+      },
+      "share_other_person": {
+       "d": 0.023,
+       "lo95": 0.0,
+       "hi95": 0.068
+      },
+      "share_no_person": {
+       "d": 0.084,
+       "lo95": 0.016,
+       "hi95": 0.173
+      }
+     }
+    },
+    "gpt-4.1-mini": {
+     "global": {
+      "edits": {
+       "d": 2841.0,
+       "lo95": 2841.0,
+       "hi95": 2841.0
+      },
+      "precision": {
+       "d": 0.729,
+       "lo95": 0.682,
+       "hi95": 0.78
+      },
+      "recall": {
+       "d": 1.0,
+       "lo95": 1.0,
+       "hi95": 1.0
+      },
+      "share_other_person": {
+       "d": 0.07,
+       "lo95": 0.024,
+       "hi95": 0.129
+      },
+      "share_no_person": {
+       "d": 0.201,
+       "lo95": 0.143,
+       "hi95": 0.25
+      }
+     },
+     "person_lexicon": {
+      "edits": {
+       "d": 2060.0,
+       "lo95": 2060.0,
+       "hi95": 2060.0
+      },
+      "precision": {
+       "d": 0.956,
+       "lo95": 0.908,
+       "hi95": 0.985
+      },
+      "recall": {
+       "d": 0.952,
+       "lo95": 0.898,
+       "hi95": 0.994
+      },
+      "share_other_person": {
+       "d": 0.036,
+       "lo95": 0.009,
+       "hi95": 0.083
+      },
+      "share_no_person": {
+       "d": 0.008,
+       "lo95": 0.002,
+       "hi95": 0.014
+      }
+     },
+     "B3": {
+      "edits": {
+       "d": 2101.0,
+       "lo95": 2101.0,
+       "hi95": 2101.0
+      },
+      "precision": {
+       "d": 0.93,
+       "lo95": 0.881,
+       "hi95": 0.959
+      },
+      "recall": {
+       "d": 0.944,
+       "lo95": 0.89,
+       "hi95": 0.984
+      },
+      "share_other_person": {
+       "d": 0.035,
+       "lo95": 0.009,
+       "hi95": 0.081
+      },
+      "share_no_person": {
+       "d": 0.035,
+       "lo95": 0.026,
+       "hi95": 0.044
+      }
+     },
+     "SACC": {
+      "edits": {
+       "d": 1874.0,
+       "lo95": 1874.0,
+       "hi95": 1874.0
+      },
+      "precision": {
+       "d": 0.96,
+       "lo95": 0.912,
+       "hi95": 0.985
+      },
+      "recall": {
+       "d": 0.869,
+       "lo95": 0.819,
+       "hi95": 0.911
+      },
+      "share_other_person": {
+       "d": 0.023,
+       "lo95": 0.0,
+       "hi95": 0.068
+      },
+      "share_no_person": {
+       "d": 0.018,
+       "lo95": 0.015,
+       "hi95": 0.022
+      }
+     }
+    },
+    "gpt-4.1": {
+     "global": {
+      "edits": {
+       "d": 2841.0,
+       "lo95": 2841.0,
+       "hi95": 2841.0
+      },
+      "precision": {
+       "d": 0.723,
+       "lo95": 0.651,
+       "hi95": 0.795
+      },
+      "recall": {
+       "d": 1.0,
+       "lo95": 1.0,
+       "hi95": 1.0
+      },
+      "share_other_person": {
+       "d": 0.093,
+       "lo95": 0.042,
+       "hi95": 0.154
+      },
+      "share_no_person": {
+       "d": 0.185,
+       "lo95": 0.126,
+       "hi95": 0.23
+      }
+     },
+     "person_lexicon": {
+      "edits": {
+       "d": 2060.0,
+       "lo95": 2060.0,
+       "hi95": 2060.0
+      },
+      "precision": {
+       "d": 0.893,
+       "lo95": 0.822,
+       "hi95": 0.956
+      },
+      "recall": {
+       "d": 0.896,
+       "lo95": 0.833,
+       "hi95": 0.956
+      },
+      "share_other_person": {
+       "d": 0.105,
+       "lo95": 0.043,
+       "hi95": 0.176
+      },
+      "share_no_person": {
+       "d": 0.002,
+       "lo95": -0.0,
+       "hi95": 0.005
+      }
+     },
+     "B3": {
+      "edits": {
+       "d": 2101.0,
+       "lo95": 2101.0,
+       "hi95": 2101.0
+      },
+      "precision": {
+       "d": 0.882,
+       "lo95": 0.812,
+       "hi95": 0.944
+      },
+      "recall": {
+       "d": 0.903,
+       "lo95": 0.839,
+       "hi95": 0.962
+      },
+      "share_other_person": {
+       "d": 0.105,
+       "lo95": 0.043,
+       "hi95": 0.176
+      },
+      "share_no_person": {
+       "d": 0.012,
+       "lo95": 0.01,
+       "hi95": 0.016
+      }
+     },
+     "SACC": {
+      "edits": {
+       "d": 1874.0,
+       "lo95": 1874.0,
+       "hi95": 1874.0
+      },
+      "precision": {
+       "d": 0.918,
+       "lo95": 0.846,
+       "hi95": 0.986
+      },
+      "recall": {
+       "d": 0.838,
+       "lo95": 0.776,
+       "hi95": 0.897
+      },
+      "share_other_person": {
+       "d": 0.07,
+       "lo95": 0.002,
+       "hi95": 0.143
+      },
+      "share_no_person": {
+       "d": 0.012,
+       "lo95": 0.012,
+       "hi95": 0.012
+      }
+     }
+    }
+   }
+  }
+ },
+ "X-1": true
+}

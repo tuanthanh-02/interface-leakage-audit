@@ -1,0 +1,159 @@
+{
+ "prereg": "runs/dev/preregs/sacc_review6_prereg.md",
+ "cells": {
+  "medqa_direct": {
+   "n": 40,
+   "population": 4397,
+   "gpt-4o-mini": 0.975,
+   "gpt-4.1-mini": 0.975,
+   "gpt-4.1": 0.975,
+   "agree_all": {
+    "n": 40,
+    "right": 0.975
+   }
+  },
+  "medqa_relational": {
+   "n": 40,
+   "population": 143,
+   "gpt-4o-mini": 1.0,
+   "gpt-4.1-mini": 1.0,
+   "gpt-4.1": 1.0,
+   "agree_all": {
+    "n": 39,
+    "right": 1.0
+   }
+  },
+  "medqa_unresolved": {
+   "n": 40,
+   "population": 3597,
+   "gpt-4o-mini": 1.0,
+   "gpt-4.1-mini": 1.0,
+   "gpt-4.1": 1.0,
+   "agree_all": {
+    "n": 40,
+    "right": 1.0
+   }
+  },
+  "medqa_other_sexrel": {
+   "n": 40,
+   "population": 42,
+   "gpt-4o-mini": 0.075,
+   "gpt-4.1-mini": 0.2,
+   "gpt-4.1": 0.225,
+   "agree_all": {
+    "n": 33,
+    "right": 0.061
+   }
+  },
+  "medqa_other_occ": {
+   "n": 40,
+   "population": 787,
+   "gpt-4o-mini": 0.025,
+   "gpt-4.1-mini": 0.025,
+   "gpt-4.1": 0.025,
+   "agree_all": {
+    "n": 39,
+    "right": 0.0
+   }
+  },
+  "medqa_nonperson": {
+   "n": 40,
+   "population": 242,
+   "gpt-4o-mini": 0.625,
+   "gpt-4.1-mini": 0.975,
+   "gpt-4.1": 0.9,
+   "agree_all": {
+    "n": 22,
+    "right": 0.955
+   }
+  },
+  "tab_direct": {
+   "n": 40,
+   "population": 170,
+   "gpt-4o-mini": 0.925,
+   "gpt-4.1-mini": 0.925,
+   "gpt-4.1": 0.95,
+   "agree_all": {
+    "n": 37,
+    "right": 0.973
+   }
+  },
+  "tab_relational": {
+   "n": 26,
+   "population": 26,
+   "gpt-4o-mini": 1.0,
+   "gpt-4.1-mini": 1.0,
+   "gpt-4.1": 1.0,
+   "agree_all": {
+    "n": 25,
+    "right": 1.0
+   }
+  },
+  "tab_unresolved": {
+   "n": 40,
+   "population": 1678,
+   "gpt-4o-mini": 0.875,
+   "gpt-4.1-mini": 0.95,
+   "gpt-4.1": 0.9,
+   "agree_all": {
+    "n": 37,
+    "right": 0.946
+   }
+  },
+  "tab_other_sexrel": {
+   "n": 40,
+   "population": 62,
+   "gpt-4o-mini": 0.275,
+   "gpt-4.1-mini": 0.15,
+   "gpt-4.1": 0.15,
+   "agree_all": {
+    "n": 23,
+    "right": 0.0
+   }
+  },
+  "tab_other_occ": {
+   "n": 40,
+   "population": 165,
+   "gpt-4o-mini": 0.55,
+   "gpt-4.1-mini": 0.35,
+   "gpt-4.1": 0.55,
+   "agree_all": {
+    "n": 8,
+    "right": 0.0
+   }
+  },
+  "tab_nonperson": {
+   "n": 40,
+   "population": 1409,
+   "gpt-4o-mini": 0.9,
+   "gpt-4.1-mini": 0.9,
+   "gpt-4.1": 0.85,
+   "agree_all": {
+    "n": 31,
+    "right": 0.935
+   }
+  }
+ },
+ "kappa": {
+  "medqa|gpt-4o-mini|gpt-4.1-mini": 0.67,
+  "medqa|gpt-4o-mini|gpt-4.1": 0.637,
+  "medqa|gpt-4.1-mini|gpt-4.1": 0.899,
+  "tab|gpt-4o-mini|gpt-4.1-mini": 0.51,
+  "tab|gpt-4o-mini|gpt-4.1": 0.493,
+  "tab|gpt-4.1-mini|gpt-4.1": 0.576
+ },
+ "weighted": {
+  "medqa_edited_gpt-4o-mini": 0.986,
+  "medqa_edited_gpt-4.1-mini": 0.986,
+  "medqa_edited_gpt-4.1": 0.986,
+  "medqa_unchanged_gpt-4o-mini": 0.163,
+  "medqa_unchanged_gpt-4.1-mini": 0.247,
+  "medqa_unchanged_gpt-4.1": 0.231,
+  "tab_edited_gpt-4o-mini": 0.881,
+  "tab_edited_gpt-4.1-mini": 0.948,
+  "tab_edited_gpt-4.1": 0.906,
+  "tab_unchanged_gpt-4o-mini": 0.841,
+  "tab_unchanged_gpt-4.1-mini": 0.816,
+  "tab_unchanged_gpt-4.1": 0.793
+ }
+}

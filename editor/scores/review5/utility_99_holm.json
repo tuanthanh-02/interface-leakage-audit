@@ -1,0 +1,53 @@
+{
+ "prereg": "runs/dev/preregs/sacc_review8_prereg.md Part U",
+ "contrasts": {
+  "medqa|SACC_minus_B2": {
+   "d": 0.0452,
+   "lo99": 0.0343,
+   "hi99": 0.0567,
+   "p": 0.0,
+   "holm_p": 0.0
+  },
+  "medqa|SACC_minus_B6": {
+   "d": 0.004,
+   "lo99": 0.0001,
+   "hi99": 0.0081,
+   "p": 0.010937698488580727,
+   "holm_p": 0.021875396977161454
+  },
+  "medqa|SACC_minus_C1": {
+   "d": 0.0413,
+   "lo99": 0.0301,
+   "hi99": 0.0521,
+   "p": 0.0,
+   "holm_p": 0.0
+  },
+  "tab|SACC_minus_B2": {
+   "d": 0.0277,
+   "lo99": 0.0129,
+   "hi99": 0.0434,
+   "p": 1.9177966077421615e-06,
+   "holm_p": 7.671186430968646e-06
+  },
+  "tab|SACC_minus_B6": {
+   "d": 0.023,
+   "lo99": 0.0076,
+   "hi99": 0.0405,
+   "p": 0.000183887797125859,
+   "holm_p": 0.000551663391377577
+  },
+  "tab|SACC_minus_C1": {
+   "d": 0.0001,
+   "lo99": -0.0097,
+   "hi99": 0.0087,
+   "p": 0.9859776046915256,
+   "holm_p": 0.9859776046915256
+  }
+ },
+ "edit_sites_phase16": {
+  "medqa|P16_B2_GLOBAL_MASK": 7632,
+  "medqa|P16_B6_GLOBAL_LADDER": 7632,
+  "tab|P16_B2_GLOBAL_MASK": 2771,
+  "tab|P16_B6_GLOBAL_LADDER": 2771
+ }
+}

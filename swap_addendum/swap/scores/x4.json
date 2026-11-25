@@ -1,0 +1,22 @@
+{
+ "usd": 0.185,
+ "stopped_on_cap": false,
+ "n": 1513,
+ "mean_told": 0.7691,
+ "mean_std": 0.2522,
+ "L_told": 0.6543,
+ "L_std": 0.2405,
+ "contrast_L": {
+  "d": 0.4138,
+  "lo": 0.3737,
+  "hi": 0.4544,
+  "ci99": true
+ },
+ "contrast_DISC": {
+  "d": -0.0213,
+  "lo": -0.039,
+  "hi": -0.0054,
+  "ci99": true
+ },
+ "share_recovers_gold_gt_.5": 0.8024
+}

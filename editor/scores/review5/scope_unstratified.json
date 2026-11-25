@@ -1,0 +1,834 @@
+{
+ "prereg": "runs/dev/preregs/sacc_review6_prereg.md Part S",
+ "keep_list": {
+  "medqa": {
+   "patient": 1576
+  },
+  "tab": {
+   "the court": 669
+  }
+ },
+ "populations": {
+  "medqa": {
+   "other_occ": 9,
+   "unresolved": 3035,
+   "direct": 4161,
+   "other_sexrel": 42,
+   "nonperson": 242,
+   "relational": 143
+  },
+  "tab": {
+   "nonperson": 740,
+   "unresolved": 1678,
+   "other_occ": 165,
+   "direct": 170,
+   "other_sexrel": 62,
+   "relational": 26
+  }
+ },
+ "unsampled": {
+  "medqa": {
+   "other_occ": 9
+  },
+  "tab": {}
+ },
+ "corpora": {
+  "medqa": {
+   "gpt-4o-mini": {
+    "point": {
+     "global": {
+      "edits": {
+       "d": 7623.0,
+       "lo95": 7623.0,
+       "hi95": 7623.0
+      },
+      "precision": {
+       "d": 0.98,
+       "lo95": 0.975,
+       "hi95": 0.985
+      },
+      "share_other_person": {
+       "d": 0.001,
+       "lo95": 0.0,
+       "hi95": 0.003
+      },
+      "share_no_person_or_unlabelled": {
+       "d": 0.019,
+       "lo95": 0.014,
+       "hi95": 0.024
+      },
+      "recall": {
+       "d": 1.0,
+       "lo95": 1.0,
+       "hi95": 1.0
+      },
+      "foreign_left_alone": {
+       "d": 0.0,
+       "lo95": 0.0,
+       "hi95": 0.0
+      }
+     },
+     "B3": {
+      "edits": {
+       "d": 7381.0,
+       "lo95": 7381.0,
+       "hi95": 7381.0
+      },
+      "precision": {
+       "d": 1.0,
+       "lo95": 0.999,
+       "hi95": 1.0
+      },
+      "share_other_person": {
+       "d": 0.0,
+       "lo95": 0.0,
+       "hi95": 0.0
+      },
+      "share_no_person_or_unlabelled": {
+       "d": 0.0,
+       "lo95": 0.0,
+       "hi95": 0.001
+      },
+      "recall": {
+       "d": 0.988,
+       "lo95": 0.983,
+       "hi95": 0.993
+      },
+      "foreign_left_alone": {
+       "d": 0.98,
+       "lo95": 0.954,
+       "hi95": 1.0
+      }
+     },
+     "SACC": {
+      "edits": {
+       "d": 7339.0,
+       "lo95": 7339.0,
+       "hi95": 7339.0
+      },
+      "precision": {
+       "d": 1.0,
+       "lo95": 1.0,
+       "hi95": 1.0
+      },
+      "share_other_person": {
+       "d": 0.0,
+       "lo95": 0.0,
+       "hi95": 0.0
+      },
+      "share_no_person_or_unlabelled": {
+       "d": 0.0,
+       "lo95": 0.0,
+       "hi95": 0.0
+      },
+      "recall": {
+       "d": 0.983,
+       "lo95": 0.978,
+       "hi95": 0.987
+      },
+      "foreign_left_alone": {
+       "d": 1.0,
+       "lo95": 1.0,
+       "hi95": 1.0
+      }
+     }
+    },
+    "n_sampled": {
+     "direct": 37,
+     "relational": 40,
+     "unresolved": 30,
+     "other_sexrel": 40,
+     "nonperson": 40
+    },
+    "label_counts": {
+     "direct": {
+      "PROTECTED": 37
+     },
+     "relational": {
+      "PROTECTED": 40
+     },
+     "unresolved": {
+      "PROTECTED": 30
+     },
+     "other_sexrel": {
+      "PROTECTED": 37,
+      "NONE": 2,
+      "OTHER": 1
+     },
+     "nonperson": {
+      "PROTECTED": 15,
+      "NONE": 24,
+      "OTHER": 1
+     }
+    }
+   },
+   "gpt-4.1-mini": {
+    "point": {
+     "global": {
+      "edits": {
+       "d": 7623.0,
+       "lo95": 7623.0,
+       "hi95": 7623.0
+      },
+      "precision": {
+       "d": 0.968,
+       "lo95": 0.967,
+       "hi95": 0.97
+      },
+      "share_other_person": {
+       "d": 0.002,
+       "lo95": 0.0,
+       "hi95": 0.003
+      },
+      "share_no_person_or_unlabelled": {
+       "d": 0.03,
+       "lo95": 0.028,
+       "hi95": 0.032
+      },
+      "recall": {
+       "d": 1.0,
+       "lo95": 1.0,
+       "hi95": 1.0
+      },
+      "foreign_left_alone": {
+       "d": 0.0,
+       "lo95": 0.0,
+       "hi95": 0.0
+      }
+     },
+     "B3": {
+      "edits": {
+       "d": 7381.0,
+       "lo95": 7381.0,
+       "hi95": 7381.0
+      },
+      "precision": {
+       "d": 0.999,
+       "lo95": 0.998,
+       "hi95": 1.0
+      },
+      "share_other_person": {
+       "d": 0.001,
+       "lo95": 0.0,
+       "hi95": 0.002
+      },
+      "share_no_person_or_unlabelled": {
+       "d": 0.0,
+       "lo95": -0.0,
+       "hi95": 0.001
+      },
+      "recall": {
+       "d": 0.999,
+       "lo95": 0.998,
+       "hi95": 1.0
+      },
+      "foreign_left_alone": {
+       "d": 0.966,
+       "lo95": 0.945,
+       "hi95": 0.986
+      }
+     },
+     "SACC": {
+      "edits": {
+       "d": 7339.0,
+       "lo95": 7339.0,
+       "hi95": 7339.0
+      },
+      "precision": {
+       "d": 1.0,
+       "lo95": 1.0,
+       "hi95": 1.0
+      },
+      "share_other_person": {
+       "d": 0.0,
+       "lo95": 0.0,
+       "hi95": 0.0
+      },
+      "share_no_person_or_unlabelled": {
+       "d": 0.0,
+       "lo95": 0.0,
+       "hi95": 0.0
+      },
+      "recall": {
+       "d": 0.995,
+       "lo95": 0.993,
+       "hi95": 0.996
+      },
+      "foreign_left_alone": {
+       "d": 1.0,
+       "lo95": 1.0,
+       "hi95": 1.0
+      }
+     }
+    },
+    "n_sampled": {
+     "direct": 37,
+     "relational": 40,
+     "unresolved": 30,
+     "other_sexrel": 40,
+     "nonperson": 40
+    },
+    "label_counts": {
+     "direct": {
+      "PROTECTED": 37
+     },
+     "relational": {
+      "PROTECTED": 40
+     },
+     "unresolved": {
+      "PROTECTED": 30
+     },
+     "other_sexrel": {
+      "PROTECTED": 32,
+      "OTHER": 6,
+      "NONE": 2
+     },
+     "nonperson": {
+      "NONE": 38,
+      "OTHER": 1,
+      "PROTECTED": 1
+     }
+    }
+   },
+   "gpt-4.1": {
+    "point": {
+     "global": {
+      "edits": {
+       "d": 7623.0,
+       "lo95": 7623.0,
+       "hi95": 7623.0
+      },
+      "precision": {
+       "d": 0.97,
+       "lo95": 0.968,
+       "hi95": 0.974
+      },
+      "share_other_person": {
+       "d": 0.002,
+       "lo95": 0.001,
+       "hi95": 0.004
+      },
+      "share_no_person_or_unlabelled": {
+       "d": 0.028,
+       "lo95": 0.025,
+       "hi95": 0.031
+      },
+      "recall": {
+       "d": 1.0,
+       "lo95": 1.0,
+       "hi95": 1.0
+      },
+      "foreign_left_alone": {
+       "d": 0.0,
+       "lo95": 0.0,
+       "hi95": 0.0
+      }
+     },
+     "B3": {
+      "edits": {
+       "d": 7381.0,
+       "lo95": 7381.0,
+       "hi95": 7381.0
+      },
+      "precision": {
+       "d": 0.999,
+       "lo95": 0.998,
+       "hi95": 0.999
+      },
+      "share_other_person": {
+       "d": 0.001,
+       "lo95": 0.001,
+       "hi95": 0.002
+      },
+      "share_no_person_or_unlabelled": {
+       "d": 0.0,
+       "lo95": -0.0,
+       "hi95": 0.0
+      },
+      "recall": {
+       "d": 0.997,
+       "lo95": 0.993,
+       "hi95": 0.999
+      },
+      "foreign_left_alone": {
+       "d": 0.958,
+       "lo95": 0.933,
+       "hi95": 0.981
+      }
+     },
+     "SACC": {
+      "edits": {
+       "d": 7339.0,
+       "lo95": 7339.0,
+       "hi95": 7339.0
+      },
+      "precision": {
+       "d": 1.0,
+       "lo95": 1.0,
+       "hi95": 1.0
+      },
+      "share_other_person": {
+       "d": 0.0,
+       "lo95": 0.0,
+       "hi95": 0.0
+      },
+      "share_no_person_or_unlabelled": {
+       "d": 0.0,
+       "lo95": 0.0,
+       "hi95": 0.0
+      },
+      "recall": {
+       "d": 0.992,
+       "lo95": 0.989,
+       "hi95": 0.995
+      },
+      "foreign_left_alone": {
+       "d": 1.0,
+       "lo95": 1.0,
+       "hi95": 1.0
+      }
+     }
+    },
+    "n_sampled": {
+     "direct": 37,
+     "relational": 40,
+     "unresolved": 30,
+     "other_sexrel": 40,
+     "nonperson": 40
+    },
+    "label_counts": {
+     "direct": {
+      "PROTECTED": 37
+     },
+     "relational": {
+      "PROTECTED": 40
+     },
+     "unresolved": {
+      "PROTECTED": 30
+     },
+     "other_sexrel": {
+      "PROTECTED": 31,
+      "OTHER": 8,
+      "NONE": 1
+     },
+     "nonperson": {
+      "NONE": 35,
+      "PROTECTED": 4,
+      "OTHER": 1
+     }
+    }
+   }
+  },
+  "tab": {
+   "gpt-4o-mini": {
+    "point": {
+     "global": {
+      "edits": {
+       "d": 2841.0,
+       "lo95": 2841.0,
+       "hi95": 2841.0
+      },
+      "precision": {
+       "d": 0.666,
+       "lo95": 0.59,
+       "hi95": 0.738
+      },
+      "share_other_person": {
+       "d": 0.016,
+       "lo95": 0.0,
+       "hi95": 0.047
+      },
+      "share_no_person_or_unlabelled": {
+       "d": 0.318,
+       "lo95": 0.248,
+       "hi95": 0.388
+      },
+      "recall": {
+       "d": 1.0,
+       "lo95": 1.0,
+       "hi95": 1.0
+      },
+      "foreign_left_alone": {
+       "d": 0.0,
+       "lo95": 0.0,
+       "hi95": 0.0
+      }
+     },
+     "B3": {
+      "edits": {
+       "d": 2101.0,
+       "lo95": 2101.0,
+       "hi95": 2101.0
+      },
+      "precision": {
+       "d": 0.845,
+       "lo95": 0.758,
+       "hi95": 0.921
+      },
+      "share_other_person": {
+       "d": 0.022,
+       "lo95": 0.0,
+       "hi95": 0.064
+      },
+      "share_no_person_or_unlabelled": {
+       "d": 0.133,
+       "lo95": 0.066,
+       "hi95": 0.213
+      },
+      "recall": {
+       "d": 0.938,
+       "lo95": 0.877,
+       "hi95": 1.0
+      },
+      "foreign_left_alone": {
+       "d": 0.657,
+       "lo95": 0.537,
+       "hi95": 0.793
+      }
+     },
+     "SACC": {
+      "edits": {
+       "d": 1874.0,
+       "lo95": 1874.0,
+       "hi95": 1874.0
+      },
+      "precision": {
+       "d": 0.884,
+       "lo95": 0.789,
+       "hi95": 0.971
+      },
+      "share_other_person": {
+       "d": 0.022,
+       "lo95": 0.0,
+       "hi95": 0.067
+      },
+      "share_no_person_or_unlabelled": {
+       "d": 0.094,
+       "lo95": 0.025,
+       "hi95": 0.184
+      },
+      "recall": {
+       "d": 0.875,
+       "lo95": 0.816,
+       "hi95": 0.932
+      },
+      "foreign_left_alone": {
+       "d": 0.77,
+       "lo95": 0.638,
+       "hi95": 0.931
+      }
+     }
+    },
+    "n_sampled": {
+     "direct": 40,
+     "relational": 26,
+     "unresolved": 40,
+     "other_sexrel": 40,
+     "other_occ": 40,
+     "nonperson": 19
+    },
+    "label_counts": {
+     "direct": {
+      "PROTECTED": 38,
+      "NONE": 1,
+      "MISSING": 1
+     },
+     "relational": {
+      "PROTECTED": 26
+     },
+     "unresolved": {
+      "PROTECTED": 35,
+      "NONE": 4,
+      "OTHER": 1
+     },
+     "other_sexrel": {
+      "NONE": 11,
+      "PROTECTED": 29
+     },
+     "other_occ": {
+      "NONE": 21,
+      "PROTECTED": 18,
+      "OTHER": 1
+     },
+     "nonperson": {
+      "NONE": 16,
+      "PROTECTED": 3
+     }
+    }
+   },
+   "gpt-4.1-mini": {
+    "point": {
+     "global": {
+      "edits": {
+       "d": 2841.0,
+       "lo95": 2841.0,
+       "hi95": 2841.0
+      },
+      "precision": {
+       "d": 0.738,
+       "lo95": 0.676,
+       "hi95": 0.8
+      },
+      "share_other_person": {
+       "d": 0.068,
+       "lo95": 0.022,
+       "hi95": 0.124
+      },
+      "share_no_person_or_unlabelled": {
+       "d": 0.194,
+       "lo95": 0.133,
+       "hi95": 0.257
+      },
+      "recall": {
+       "d": 1.0,
+       "lo95": 1.0,
+       "hi95": 1.0
+      },
+      "foreign_left_alone": {
+       "d": 0.0,
+       "lo95": 0.0,
+       "hi95": 0.0
+      }
+     },
+     "B3": {
+      "edits": {
+       "d": 2101.0,
+       "lo95": 2101.0,
+       "hi95": 2101.0
+      },
+      "precision": {
+       "d": 0.924,
+       "lo95": 0.862,
+       "hi95": 0.97
+      },
+      "share_other_person": {
+       "d": 0.036,
+       "lo95": 0.01,
+       "hi95": 0.082
+      },
+      "share_no_person_or_unlabelled": {
+       "d": 0.039,
+       "lo95": 0.012,
+       "hi95": 0.087
+      },
+      "recall": {
+       "d": 0.926,
+       "lo95": 0.864,
+       "hi95": 0.981
+      },
+      "foreign_left_alone": {
+       "d": 0.786,
+       "lo95": 0.651,
+       "hi95": 0.905
+      }
+     },
+     "SACC": {
+      "edits": {
+       "d": 1874.0,
+       "lo95": 1874.0,
+       "hi95": 1874.0
+      },
+      "precision": {
+       "d": 0.951,
+       "lo95": 0.884,
+       "hi95": 0.998
+      },
+      "share_other_person": {
+       "d": 0.022,
+       "lo95": 0.0,
+       "hi95": 0.067
+      },
+      "share_no_person_or_unlabelled": {
+       "d": 0.027,
+       "lo95": 0.0,
+       "hi95": 0.076
+      },
+      "recall": {
+       "d": 0.849,
+       "lo95": 0.793,
+       "hi95": 0.902
+      },
+      "foreign_left_alone": {
+       "d": 0.876,
+       "lo95": 0.739,
+       "hi95": 0.994
+      }
+     }
+    },
+    "n_sampled": {
+     "direct": 40,
+     "relational": 26,
+     "unresolved": 40,
+     "other_sexrel": 40,
+     "other_occ": 40,
+     "nonperson": 19
+    },
+    "label_counts": {
+     "direct": {
+      "PROTECTED": 38,
+      "NONE": 2
+     },
+     "relational": {
+      "PROTECTED": 26
+     },
+     "unresolved": {
+      "PROTECTED": 38,
+      "NONE": 1,
+      "OTHER": 1
+     },
+     "other_sexrel": {
+      "PROTECTED": 34,
+      "NONE": 5,
+      "OTHER": 1
+     },
+     "other_occ": {
+      "PROTECTED": 26,
+      "OTHER": 8,
+      "NONE": 6
+     },
+     "nonperson": {
+      "OTHER": 3,
+      "PROTECTED": 4,
+      "NONE": 12
+     }
+    }
+   },
+   "gpt-4.1": {
+    "point": {
+     "global": {
+      "edits": {
+       "d": 2841.0,
+       "lo95": 2841.0,
+       "hi95": 2841.0
+      },
+      "precision": {
+       "d": 0.726,
+       "lo95": 0.647,
+       "hi95": 0.803
+      },
+      "share_other_person": {
+       "d": 0.093,
+       "lo95": 0.045,
+       "hi95": 0.153
+      },
+      "share_no_person_or_unlabelled": {
+       "d": 0.181,
+       "lo95": 0.114,
+       "hi95": 0.241
+      },
+      "recall": {
+       "d": 1.0,
+       "lo95": 1.0,
+       "hi95": 1.0
+      },
+      "foreign_left_alone": {
+       "d": 0.0,
+       "lo95": 0.0,
+       "hi95": 0.0
+      }
+     },
+     "B3": {
+      "edits": {
+       "d": 2101.0,
+       "lo95": 2101.0,
+       "hi95": 2101.0
+      },
+      "precision": {
+       "d": 0.87,
+       "lo95": 0.786,
+       "hi95": 0.937
+      },
+      "share_other_person": {
+       "d": 0.108,
+       "lo95": 0.048,
+       "hi95": 0.178
+      },
+      "share_no_person_or_unlabelled": {
+       "d": 0.022,
+       "lo95": -0.0,
+       "hi95": 0.066
+      },
+      "recall": {
+       "d": 0.887,
+       "lo95": 0.82,
+       "hi95": 0.959
+      },
+      "foreign_left_alone": {
+       "d": 0.65,
+       "lo95": 0.501,
+       "hi95": 0.8
+      }
+     },
+     "SACC": {
+      "edits": {
+       "d": 1874.0,
+       "lo95": 1874.0,
+       "hi95": 1874.0
+      },
+      "precision": {
+       "d": 0.908,
+       "lo95": 0.819,
+       "hi95": 0.978
+      },
+      "share_other_person": {
+       "d": 0.069,
+       "lo95": 0.002,
+       "hi95": 0.141
+      },
+      "share_no_person_or_unlabelled": {
+       "d": 0.022,
+       "lo95": -0.0,
+       "hi95": 0.067
+      },
+      "recall": {
+       "d": 0.825,
+       "lo95": 0.76,
+       "hi95": 0.891
+      },
+      "foreign_left_alone": {
+       "d": 0.779,
+       "lo95": 0.622,
+       "hi95": 0.938
+      }
+     }
+    },
+    "n_sampled": {
+     "direct": 40,
+     "relational": 26,
+     "unresolved": 40,
+     "other_sexrel": 40,
+     "other_occ": 40,
+     "nonperson": 19
+    },
+    "label_counts": {
+     "direct": {
+      "PROTECTED": 39,
+      "OTHER": 1
+     },
+     "relational": {
+      "PROTECTED": 26
+     },
+     "unresolved": {
+      "PROTECTED": 36,
+      "OTHER": 3,
+      "NONE": 1
+     },
+     "other_sexrel": {
+      "PROTECTED": 34,
+      "OTHER": 6
+     },
+     "other_occ": {
+      "OTHER": 21,
+      "PROTECTED": 18,
+      "NONE": 1
+     },
+     "nonperson": {
+      "NONE": 12,
+      "PROTECTED": 6,
+      "OTHER": 1
+     }
+    }
+   }
+  }
+ }
+}

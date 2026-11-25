@@ -1,0 +1,2 @@
+corpus,arm,documents,TPS,documents_edited,TPS_edited,edited_char_share,mean_edit_regions,mlm,embedder
+medqa,LLM_full,400,0.807,391,0.8026,0.0271,9.91,bert-base-uncased,intfloat/e5-base-v2

@@ -1,0 +1,145 @@
+{
+ "prereg": "runs/dev/preregs/sacc_review7_prereg.md Part V",
+ "corpora": {
+  "medqa": {
+   "female": {
+    "entries": 700,
+    "prior_mean": 0.477,
+    "Detector": {
+     "L": 0.8084,
+     "LEAK": 0.81,
+     "ANON": 0.0086,
+     "MISLED": 0.1814
+    },
+    "B2": {
+     "L": 0.4817,
+     "LEAK": 0.58,
+     "ANON": 0.0771,
+     "MISLED": 0.3429
+    },
+    "B6": {
+     "L": 0.4393,
+     "LEAK": 0.5414,
+     "ANON": 0.1543,
+     "MISLED": 0.3043
+    },
+    "C1": {
+     "L": 0.4849,
+     "LEAK": 0.5871,
+     "ANON": 0.0743,
+     "MISLED": 0.3386
+    },
+    "SACC_Nstar": {
+     "L": 0.4436,
+     "LEAK": 0.54,
+     "ANON": 0.1586,
+     "MISLED": 0.3014
+    }
+   },
+   "male": {
+    "entries": 813,
+    "prior_mean": 0.4984,
+    "Detector": {
+     "L": 0.8786,
+     "LEAK": 0.8942,
+     "ANON": 0.0086,
+     "MISLED": 0.0972
+    },
+    "B2": {
+     "L": 0.4962,
+     "LEAK": 0.6593,
+     "ANON": 0.1365,
+     "MISLED": 0.2042
+    },
+    "B6": {
+     "L": 0.4163,
+     "LEAK": 0.6076,
+     "ANON": 0.214,
+     "MISLED": 0.1784
+    },
+    "C1": {
+     "L": 0.5029,
+     "LEAK": 0.6691,
+     "ANON": 0.1316,
+     "MISLED": 0.1993
+    },
+    "SACC_Nstar": {
+     "L": 0.4231,
+     "LEAK": 0.6101,
+     "ANON": 0.2165,
+     "MISLED": 0.1734
+    }
+   }
+  },
+  "tab": {
+   "female": {
+    "entries": 57,
+    "prior_mean": 0.373,
+    "Detector": {
+     "L": 0.2807,
+     "LEAK": 0.2807,
+     "ANON": 0.0526,
+     "MISLED": 0.6667
+    },
+    "B2": {
+     "L": 0.1754,
+     "LEAK": 0.2807,
+     "ANON": 0.1053,
+     "MISLED": 0.614
+    },
+    "B6": {
+     "L": 0.1706,
+     "LEAK": 0.2632,
+     "ANON": 0.193,
+     "MISLED": 0.5439
+    },
+    "C1": {
+     "L": 0.1761,
+     "LEAK": 0.3158,
+     "ANON": 0.1228,
+     "MISLED": 0.5614
+    },
+    "SACC_Nstar": {
+     "L": 0.1505,
+     "LEAK": 0.2105,
+     "ANON": 0.2456,
+     "MISLED": 0.5439
+    }
+   },
+   "male": {
+    "entries": 187,
+    "prior_mean": 0.3857,
+    "Detector": {
+     "L": 0.8258,
+     "LEAK": 0.8984,
+     "ANON": 0.0214,
+     "MISLED": 0.0802
+    },
+    "B2": {
+     "L": 0.5807,
+     "LEAK": 0.8984,
+     "ANON": 0.0428,
+     "MISLED": 0.0588
+    },
+    "B6": {
+     "L": 0.4404,
+     "LEAK": 0.8289,
+     "ANON": 0.0802,
+     "MISLED": 0.0909
+    },
+    "C1": {
+     "L": 0.5406,
+     "LEAK": 0.8289,
+     "ANON": 0.1016,
+     "MISLED": 0.0695
+    },
+    "SACC_Nstar": {
+     "L": 0.4778,
+     "LEAK": 0.8342,
+     "ANON": 0.1016,
+     "MISLED": 0.0642
+    }
+   }
+  }
+ }
+}
